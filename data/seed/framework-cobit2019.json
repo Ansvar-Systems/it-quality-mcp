@@ -1,0 +1,373 @@
+{
+  "id": "cobit2019",
+  "name": "COBIT 2019",
+  "version": "2019",
+  "authority": "ISACA",
+  "domain": "governance",
+  "description": "Enterprise IT governance and management framework with 40 objectives organized across five domains: Evaluate, Direct and Monitor (EDM); Align, Plan and Organize (APO); Build, Acquire and Implement (BAI); Deliver, Service and Support (DSS); Monitor, Evaluate and Assess (MEA).",
+  "url": "https://www.isaca.org/resources/cobit",
+  "license_note": "Metadata only. No ISACA copyrighted text reproduced.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "COBIT-EDM01",
+      "title": "Ensured governance framework setting and maintenance",
+      "domain": "governance",
+      "category": "EDM",
+      "description": "Provides a consistent approach integrated and aligned with the enterprise governance approach. IT-related decisions are made in line with the organization's strategies and objectives. IT-related processes are overseen effectively and transparently.",
+      "purpose": "Ensure a consistent approach to enterprise IT governance integrated with enterprise governance requirements.",
+      "tags": ["governance", "framework", "oversight", "board"]
+    },
+    {
+      "item_id": "COBIT-EDM02",
+      "title": "Ensured benefits delivery",
+      "domain": "governance",
+      "category": "EDM",
+      "description": "Secures optimal value from IT-enabled initiatives, services, and assets. Cost-efficient delivery of solutions and services is achieved. A reliable and accurate picture of costs and likely benefits is provided so business needs are supported effectively.",
+      "purpose": "Secure optimal value from IT-enabled initiatives, services, and assets through cost-efficient delivery.",
+      "tags": ["benefits", "value", "roi", "investment"]
+    },
+    {
+      "item_id": "COBIT-EDM03",
+      "title": "Ensured risk optimization",
+      "domain": "governance",
+      "category": "EDM",
+      "description": "Ensures that IT-related enterprise risk does not exceed the organization's risk appetite and tolerance. The impact of IT risk to enterprise value is identified and managed. The potential for compliance failures is minimized.",
+      "purpose": "Ensure that IT-related enterprise risk does not exceed the organization's risk appetite and risk tolerance.",
+      "tags": ["risk", "risk-appetite", "risk-tolerance", "compliance"]
+    },
+    {
+      "item_id": "COBIT-EDM04",
+      "title": "Ensured resource optimization",
+      "domain": "governance",
+      "category": "EDM",
+      "description": "Ensures that adequate and sufficient IT-related capabilities (people, process, and technology) are available to support enterprise objectives effectively at optimal cost. Resource allocation is prioritized based on enterprise needs.",
+      "purpose": "Ensure that adequate and sufficient IT-related capabilities are available to support enterprise objectives at optimal cost.",
+      "tags": ["resources", "optimization", "capacity", "people", "technology"]
+    },
+    {
+      "item_id": "COBIT-EDM05",
+      "title": "Ensured stakeholder engagement",
+      "domain": "governance",
+      "category": "EDM",
+      "description": "Ensures that enterprise stakeholders are supportive of the IT strategy and roadmap. Communication is effective and timely, and the basis for reporting is established to increase performance. Key reporting metrics and targets are identified and approved.",
+      "purpose": "Ensure that enterprise stakeholders are supportive of the IT strategy and that IT reporting is transparent and relevant.",
+      "tags": ["stakeholders", "engagement", "transparency", "reporting"]
+    },
+    {
+      "item_id": "COBIT-APO01",
+      "title": "Managed IT management framework",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Implements and maintains mechanisms and authorities to manage information and use of IT in the enterprise. Establishes organizational structures for IT management and defines roles and responsibilities for IT-related activities.",
+      "purpose": "Implement and maintain a management framework providing a consistent management approach for enterprise IT governance requirements.",
+      "tags": ["management-framework", "organization", "roles", "responsibilities"]
+    },
+    {
+      "item_id": "COBIT-APO02",
+      "title": "Managed strategy",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Provides a holistic view of the current IT environment and business direction. Leverages IT services and assets to achieve strategic objectives. Creates a strategic plan that defines how IT goals will contribute to the organization's strategic goals.",
+      "purpose": "Align IT strategy with enterprise strategy and translate business goals into actionable IT plans.",
+      "tags": ["strategy", "alignment", "planning", "business-goals"]
+    },
+    {
+      "item_id": "COBIT-APO03",
+      "title": "Managed enterprise architecture",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Establishes a common architecture consisting of business process, information, data, application, and technology layers for effectively and efficiently realizing enterprise and IT strategies. Defines key architecture principles and standards.",
+      "purpose": "Represent the different building blocks of the enterprise and their interrelationships to enable strategy execution.",
+      "tags": ["enterprise-architecture", "technology-architecture", "standards", "principles"]
+    },
+    {
+      "item_id": "COBIT-APO04",
+      "title": "Managed innovation",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Maintains an awareness of IT and related service trends. Identifies innovation opportunities and plans how to benefit from them in relation to business needs. Analyzes and assesses the impact of emerging technologies on the business.",
+      "purpose": "Achieve competitive advantage, business innovation, and improved operational effectiveness through awareness and adoption of IT innovation.",
+      "tags": ["innovation", "emerging-technology", "digital-transformation", "research"]
+    },
+    {
+      "item_id": "COBIT-APO05",
+      "title": "Managed portfolio",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Executes strategic direction set for investments in line with the enterprise architecture vision and desired characteristics of the investment and related services portfolios. Considers the different categories of investment and the constraints on resources and funding.",
+      "purpose": "Optimize the performance of the overall portfolio of programmes and services in response to changing priorities.",
+      "tags": ["portfolio", "investment", "programme", "prioritization"]
+    },
+    {
+      "item_id": "COBIT-APO06",
+      "title": "Managed budget and costs",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Manages the IT-related financial activities in both the business and IT functions, covering budget, cost and benefit management, and prioritization of spending through the use of formal budgeting practices and a fair and equitable system of allocating costs.",
+      "purpose": "Foster partnership between IT and enterprise stakeholders to enable effective use of IT-related resources and provide transparency of IT costs.",
+      "tags": ["budget", "cost-management", "financial-management", "allocation"]
+    },
+    {
+      "item_id": "COBIT-APO07",
+      "title": "Managed human resources",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Provides a structured approach to ensuring optimal structuring, placement, decision rights, and skills of human resources. Reduces IT personnel risk through competency management, performance management, and succession planning.",
+      "purpose": "Optimize human resource capabilities to meet enterprise objectives through proper structuring, skills management, and succession planning.",
+      "tags": ["human-resources", "skills", "competency", "staffing", "succession"]
+    },
+    {
+      "item_id": "COBIT-APO08",
+      "title": "Managed relationships",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Manages the relationship between the business and IT in a formalized and transparent manner that ensures focus on achieving a common and shared goal of successful enterprise outcomes. Serves as the liaison point between stakeholders.",
+      "purpose": "Create improved outcomes, increased confidence in IT, and effective use of resources through managing IT-business relationships.",
+      "tags": ["relationships", "business-it-alignment", "stakeholder", "communication"]
+    },
+    {
+      "item_id": "COBIT-APO09",
+      "title": "Managed service agreements",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Aligns IT-enabled services and service levels with enterprise needs and expectations. Defines, documents, and manages service agreements including service catalogues. Ensures services are delivered according to agreed terms.",
+      "purpose": "Ensure that IT services and service levels meet current and future enterprise needs through documenting and managing service agreements.",
+      "tags": ["service-agreements", "sla", "service-catalogue", "service-levels"]
+    },
+    {
+      "item_id": "COBIT-APO10",
+      "title": "Managed vendors",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Manages IT-related services provided by all types of vendors to meet enterprise requirements. Covers vendor selection, relationship management, contract management, and performance reviews to optimize value from vendor relationships.",
+      "purpose": "Manage IT-related services provided by vendors to meet enterprise requirements, including vendor selection and relationship management.",
+      "tags": ["vendor", "supplier", "procurement", "third-party", "contract"]
+    },
+    {
+      "item_id": "COBIT-APO11",
+      "title": "Managed quality",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Defines and communicates quality requirements in all processes, procedures, and the related enterprise outcomes. Monitors and takes corrective action where needed to ensure quality criteria are met. Maintains continuous improvement focus.",
+      "purpose": "Ensure consistent delivery of technology solutions and services to meet enterprise quality requirements and stakeholder needs.",
+      "tags": ["quality", "quality-management", "qms", "continuous-improvement"]
+    },
+    {
+      "item_id": "COBIT-APO12",
+      "title": "Managed risk",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Continuously identifies, assesses, and reduces IT-related risk within tolerance levels set by enterprise management. Integrates IT risk management with overall enterprise risk management. Maintains a risk profile and risk register.",
+      "purpose": "Integrate IT risk management with overall enterprise risk management and balance costs and benefits of managing IT risk.",
+      "tags": ["risk-management", "risk-assessment", "risk-register", "mitigation"]
+    },
+    {
+      "item_id": "COBIT-APO13",
+      "title": "Managed security",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Defines, operates, and monitors an information security management system. Keeps the impact and occurrence of information security incidents within the enterprise's risk appetite levels. Establishes and maintains security roles, access privileges, and policies.",
+      "purpose": "Keep the impact and occurrence of information security incidents within the enterprise's risk appetite levels.",
+      "tags": ["security", "information-security", "isms", "access-control", "security-policy"]
+    },
+    {
+      "item_id": "COBIT-APO14",
+      "title": "Managed data",
+      "domain": "governance",
+      "category": "APO",
+      "description": "Achieves and maintains effective management of data assets throughout the data lifecycle, from creation to disposal. Ensures data quality, integrity, and availability meet enterprise requirements. Defines data standards and governance processes.",
+      "purpose": "Achieve effective management of enterprise data assets throughout the data lifecycle.",
+      "tags": ["data", "data-management", "data-governance", "data-quality", "lifecycle"]
+    },
+    {
+      "item_id": "COBIT-BAI01",
+      "title": "Managed programmes",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Manages all programmes in the investment portfolio in coordination with the enterprise programme management office. Initiates, plans, and controls execution of programmes and monitors expected value delivery.",
+      "purpose": "Realize business benefits and reduce risk of unexpected delays, costs, and value erosion through managing all programmes in the investment portfolio.",
+      "tags": ["programme", "project-portfolio", "delivery", "benefits-realization"]
+    },
+    {
+      "item_id": "COBIT-BAI02",
+      "title": "Managed requirements definition",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Identifies solutions and analyzes requirements before acquisition or creation to ensure that they are in line with enterprise strategic requirements covering business processes, applications, data, and technology. Coordinates with affected stakeholders to review feasible options.",
+      "purpose": "Create optimal solutions that meet enterprise needs while minimizing risk through proper requirements definition.",
+      "tags": ["requirements", "business-analysis", "solution-design", "feasibility"]
+    },
+    {
+      "item_id": "COBIT-BAI03",
+      "title": "Managed solutions identification and build",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Establishes and maintains identified solutions in line with enterprise requirements covering design, development, procurement, and partnering with suppliers. Manages configuration and prepares for testing and transition to operational state.",
+      "purpose": "Establish and maintain identified solutions in line with enterprise requirements covering design, development, and procurement.",
+      "tags": ["solution-build", "development", "procurement", "design", "configuration"]
+    },
+    {
+      "item_id": "COBIT-BAI04",
+      "title": "Managed availability and capacity",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Balances current and future needs for availability, performance, and capacity with cost-effective service provision. Assesses current capabilities, forecasts future needs, and takes action to ensure resources are available.",
+      "purpose": "Balance current and future needs for availability, performance, and capacity with cost-effective service provision.",
+      "tags": ["availability", "capacity", "performance", "planning", "forecasting"]
+    },
+    {
+      "item_id": "COBIT-BAI05",
+      "title": "Managed organizational change",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Prepares and commits stakeholders for business change and reduces the risk of failure by maximizing stakeholder engagement. Covers change planning, communication, training, and adoption measurement.",
+      "purpose": "Prepare and commit stakeholders for business change and reduce the risk of failure.",
+      "tags": ["organizational-change", "change-management", "adoption", "training", "communication"]
+    },
+    {
+      "item_id": "COBIT-BAI06",
+      "title": "Managed IT changes",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Manages all changes in a controlled manner, including standard changes and emergency maintenance relating to business processes, applications, and infrastructure. Minimizes errors due to incomplete specifications and reduces unauthorized changes.",
+      "purpose": "Enable fast and reliable delivery of change to the business while mitigating risks of negatively impacting stability.",
+      "tags": ["change-management", "change-control", "authorization", "impact-assessment"]
+    },
+    {
+      "item_id": "COBIT-BAI07",
+      "title": "Managed IT change acceptance and transitioning",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Formally accepts and makes operational new solutions, including implementation planning, system and data conversion, acceptance testing, communication, release preparation, and post-implementation review.",
+      "purpose": "Implement solutions safely and in line with the agreed plan and manage the transition from development to operations.",
+      "tags": ["transition", "acceptance", "go-live", "post-implementation", "release"]
+    },
+    {
+      "item_id": "COBIT-BAI08",
+      "title": "Managed knowledge",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Maintains the availability of relevant, current, validated, and reliable knowledge to support all process activities and to facilitate decision making. Plans the identification, gathering, organizing, maintaining, using, and retiring of knowledge.",
+      "purpose": "Provide the knowledge required to support all staff in their work activities and for informed decision making.",
+      "tags": ["knowledge-management", "documentation", "information-sharing", "learning"]
+    },
+    {
+      "item_id": "COBIT-BAI09",
+      "title": "Managed assets",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Manages IT assets through their lifecycle to make sure that their use delivers value at optimal cost. Tracks all assets and ensures they are properly accounted for, physically protected, and that assets critical to support service capability are reliable and available.",
+      "purpose": "Account for all IT assets and optimize the value provided by these assets throughout their lifecycle.",
+      "tags": ["asset-management", "lifecycle", "inventory", "hardware", "software"]
+    },
+    {
+      "item_id": "COBIT-BAI10",
+      "title": "Managed configuration",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Defines and maintains descriptions and relationships of key resources and capabilities required to deliver IT-enabled services. Maintains a configuration management database and performs configuration audits to ensure accuracy.",
+      "purpose": "Provide sufficient information about service assets to enable the service to be effectively managed and assess impact of changes.",
+      "tags": ["configuration", "cmdb", "configuration-items", "relationships", "audit"]
+    },
+    {
+      "item_id": "COBIT-BAI11",
+      "title": "Managed projects",
+      "domain": "governance",
+      "category": "BAI",
+      "description": "Manages all projects initiated in the enterprise in a coordinated manner. Covers initiation, planning, execution, and closing with defined milestones, deliverables, and project management controls. Ensures projects deliver expected outcomes within time and budget.",
+      "purpose": "Realize business benefits and reduce risk of unexpected delays, costs, and value erosion by managing all projects in a coordinated way.",
+      "tags": ["project-management", "delivery", "milestones", "governance", "pmo"]
+    },
+    {
+      "item_id": "COBIT-DSS01",
+      "title": "Managed operations",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Coordinates and executes the activities and operational procedures required to deliver IT services at agreed service levels. Covers scheduling, monitoring of infrastructure, and management of operational events and incidents at the infrastructure level.",
+      "purpose": "Deliver IT operational service outcomes as planned, including executing predefined operational procedures.",
+      "tags": ["operations", "scheduling", "monitoring", "infrastructure", "procedures"]
+    },
+    {
+      "item_id": "COBIT-DSS02",
+      "title": "Managed service requests and incidents",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Provides timely and effective response to user requests and resolution of all types of incidents. Restores normal service, logs and fulfills user requests, and records incidents for analysis and improvement. Investigates, diagnoses, and allocates incidents appropriately.",
+      "purpose": "Achieve increased productivity and minimized disruptions through quick resolution of user queries and incidents.",
+      "tags": ["incident-management", "service-requests", "resolution", "service-desk"]
+    },
+    {
+      "item_id": "COBIT-DSS03",
+      "title": "Managed problems",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Identifies and classifies problems and their root causes. Provides timely resolution to prevent recurring incidents. Maintains and manages a known error database to improve mean time to resolution and reduce incident recurrence.",
+      "purpose": "Increase availability, improve service levels, reduce costs, and improve customer satisfaction by reducing the number of operational problems.",
+      "tags": ["problem-management", "root-cause", "known-errors", "workarounds"]
+    },
+    {
+      "item_id": "COBIT-DSS04",
+      "title": "Managed continuity",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Establishes and maintains a plan to enable the business and IT to respond to incidents and disruptions in order to continue operation of critical business processes and required IT services. Manages continuity requirements, capabilities, and testing.",
+      "purpose": "Adapt rapidly, continue business operations, and maintain availability of resources and information at a level acceptable to the enterprise during significant disruption.",
+      "tags": ["continuity", "disaster-recovery", "business-continuity", "resilience", "bcp"]
+    },
+    {
+      "item_id": "COBIT-DSS05",
+      "title": "Managed security services",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Protects enterprise information to maintain the level of information security risk acceptable to the enterprise in accordance with the security policy. Establishes and maintains identity and logical access management, network and endpoint protection, and security monitoring.",
+      "purpose": "Minimize the business impact of operational information security vulnerabilities and incidents.",
+      "tags": ["security-operations", "access-management", "endpoint-security", "network-security"]
+    },
+    {
+      "item_id": "COBIT-DSS06",
+      "title": "Managed business process controls",
+      "domain": "governance",
+      "category": "DSS",
+      "description": "Defines and maintains appropriate business process controls to ensure that information related to and processed by in-house or outsourced business processes satisfies all relevant information control requirements. Manages end-to-end business processing.",
+      "purpose": "Maintain information integrity and the security of information assets handled within business processes.",
+      "tags": ["process-controls", "data-integrity", "business-process", "segregation-of-duties"]
+    },
+    {
+      "item_id": "COBIT-MEA01",
+      "title": "Managed performance and conformance monitoring",
+      "domain": "governance",
+      "category": "MEA",
+      "description": "Collects, validates, and evaluates business, IT, and process goals and metrics. Monitors that processes are performing against agreed performance and conformance goals and targets. Provides systematic and timely reporting.",
+      "purpose": "Provide transparency of performance and conformance and drive achievement of goals through systematic monitoring and reporting.",
+      "tags": ["monitoring", "performance", "conformance", "metrics", "reporting"]
+    },
+    {
+      "item_id": "COBIT-MEA02",
+      "title": "Managed system of internal control",
+      "domain": "governance",
+      "category": "MEA",
+      "description": "Continuously monitors and evaluates the control environment, including self-assessments and independent assurance reviews. Enables management to identify control deficiencies and inefficiencies and to initiate improvement actions.",
+      "purpose": "Obtain transparency for key stakeholders on the adequacy of the system of internal controls to generate confidence in operations and trust.",
+      "tags": ["internal-controls", "self-assessment", "assurance", "audit", "compliance"]
+    },
+    {
+      "item_id": "COBIT-MEA03",
+      "title": "Managed compliance with external requirements",
+      "domain": "governance",
+      "category": "MEA",
+      "description": "Evaluates that IT processes and IT-supported business processes are compliant with laws, regulations, and contractual requirements. Obtains assurance that the requirements have been identified and complied with, and integrates IT compliance with overall enterprise compliance.",
+      "purpose": "Ensure that the enterprise is compliant with all applicable external requirements including laws, regulations, and contractual obligations.",
+      "tags": ["compliance", "regulatory", "legal", "contractual", "external-requirements"]
+    },
+    {
+      "item_id": "COBIT-MEA04",
+      "title": "Managed assurance",
+      "domain": "governance",
+      "category": "MEA",
+      "description": "Enables the organization to design and develop efficient and effective assurance initiatives by providing guidance for planning, scoping, executing, and following up on assurance reviews. Applies to audits, reviews, and other assurance activities.",
+      "purpose": "Enable the organization to design and develop assurance initiatives, providing guidance for planning, scoping, and executing assurance reviews.",
+      "tags": ["assurance", "audit", "review", "independent-assessment", "governance"]
+    }
+  ]
+}
