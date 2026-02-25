@@ -1,0 +1,12 @@
+{
+  "name": "IT Quality MCP",
+  "description": "ITIL 4, COBIT 2019, ISO 20000, ISO 22301, CMMI, and more — structured IT quality framework data via MCP",
+  "author": "Ansvar Systems",
+  "author_url": "https://ansvar.eu",
+  "homepage": "https://ansvar.ai/mcp",
+  "repository": "https://github.com/Ansvar-Systems/it-quality-mcp",
+  "category": "reference",
+  "tags": ["mcp", "itil", "cobit", "itsm", "it-governance", "iso20000", "cmmi", "sla", "compliance", "cybersecurity"],
+  "license": "Apache-2.0",
+  "transport": ["stdio", "streamable-http"]
+}

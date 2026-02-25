@@ -1,0 +1,225 @@
+schema_version: "1.0"
+mcp_name: "IT Quality MCP"
+jurisdiction: "GLOBAL"
+
+sources:
+  - name: "ITIL 4"
+    authority: "AXELOS / PeopleCert"
+    official_portal: "https://www.axelos.com/certifications/itil-service-management"
+    canonical_identifier: "ITIL 4 (2019)"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.axelos.com/policies/legal/axelos-intellectual-property"
+      summary: "No AXELOS copyrighted text reproduced. Practice names and original summary descriptions only."
+    coverage:
+      scope: "34 management practices (general, service, technical)"
+      limitations: "Metadata only — descriptions are original summaries, not copyrighted ITIL text"
+    languages:
+      - "en"
+
+  - name: "COBIT 2019"
+    authority: "ISACA"
+    official_portal: "https://www.isaca.org/resources/cobit"
+    canonical_identifier: "COBIT 2019"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.isaca.org/resources/cobit"
+      summary: "No ISACA copyrighted text reproduced. Objective names and original summary descriptions only."
+    coverage:
+      scope: "40 governance and management objectives across 5 domains (EDM, APO, BAI, DSS, MEA)"
+      limitations: "Metadata only — no copyrighted detailed guidance reproduced"
+    languages:
+      - "en"
+
+  - name: "ISO/IEC 20000-1:2018"
+    authority: "ISO/IEC"
+    official_portal: "https://www.iso.org/standard/70636.html"
+    canonical_identifier: "ISO/IEC 20000-1:2018"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/70636.html"
+      summary: "No ISO copyrighted text reproduced. Clause titles and original summary descriptions only."
+    coverage:
+      scope: "45 clauses and sub-clauses covering IT service management system requirements"
+      limitations: "Metadata only — original summaries, not ISO normative text"
+    languages:
+      - "en"
+
+  - name: "ISO 22301:2019"
+    authority: "ISO"
+    official_portal: "https://www.iso.org/standard/75106.html"
+    canonical_identifier: "ISO 22301:2019"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/75106.html"
+      summary: "No ISO copyrighted text reproduced. Clause titles and original summary descriptions only."
+    coverage:
+      scope: "26 clauses covering business continuity management system requirements"
+      limitations: "Metadata only — original summaries, not ISO normative text"
+    languages:
+      - "en"
+
+  - name: "ISO/IEC 25010 SQuaRE"
+    authority: "ISO/IEC"
+    official_portal: "https://www.iso.org/standard/35733.html"
+    canonical_identifier: "ISO/IEC 25010:2011"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/35733.html"
+      summary: "No ISO copyrighted text reproduced. Quality characteristic names and original descriptions only."
+    coverage:
+      scope: "39 quality characteristics and sub-characteristics (product + quality-in-use)"
+      limitations: "Metadata only — publicly known quality model characteristics"
+    languages:
+      - "en"
+
+  - name: "ISO/IEC 38500:2015"
+    authority: "ISO/IEC"
+    official_portal: "https://www.iso.org/standard/62816.html"
+    canonical_identifier: "ISO/IEC 38500:2015"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/62816.html"
+      summary: "No ISO copyrighted text reproduced. Principle names and original summary descriptions only."
+    coverage:
+      scope: "25 items covering IT governance principles and model"
+      limitations: "Metadata only — original summaries, not ISO normative text"
+    languages:
+      - "en"
+
+  - name: "ISO/IEC/IEEE 12207:2017"
+    authority: "ISO/IEC"
+    official_portal: "https://www.iso.org/standard/63712.html"
+    canonical_identifier: "ISO/IEC/IEEE 12207:2017"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/63712.html"
+      summary: "No ISO copyrighted text reproduced. Process names and original summary descriptions only."
+    coverage:
+      scope: "29 software lifecycle processes (agreement, organizational, technical, management)"
+      limitations: "Metadata only — original summaries, not ISO normative text"
+    languages:
+      - "en"
+
+  - name: "ISO/IEC/IEEE 15288:2023"
+    authority: "ISO/IEC"
+    official_portal: "https://www.iso.org/standard/81702.html"
+    canonical_identifier: "ISO/IEC/IEEE 15288:2023"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.iso.org/standard/81702.html"
+      summary: "No ISO copyrighted text reproduced. Process names and original summary descriptions only."
+    coverage:
+      scope: "29 systems engineering lifecycle processes"
+      limitations: "Metadata only — original summaries, not ISO normative text"
+    languages:
+      - "en"
+
+  - name: "CMMI v2.0"
+    authority: "ISACA (CMMI Institute)"
+    official_portal: "https://cmmiinstitute.com/cmmi"
+    canonical_identifier: "CMMI v2.0"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://cmmiinstitute.com/cmmi"
+      summary: "No ISACA/CMMI Institute copyrighted text reproduced. Practice area names and original summaries only."
+    coverage:
+      scope: "25 practice areas with maturity levels 0-5"
+      limitations: "Metadata only — original summaries, not copyrighted CMMI model content"
+    languages:
+      - "en"
+
+  - name: "FitSM"
+    authority: "FitSM Community (GEANT)"
+    official_portal: "https://fitsm.eu/"
+    canonical_identifier: "FitSM v2.4"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "CC-BY 4.0"
+      url: "https://creativecommons.org/licenses/by/4.0/"
+      summary: "FitSM is published under CC-BY 4.0. Descriptions are original summaries based on publicly available documentation."
+    coverage:
+      scope: "24 service management processes"
+      limitations: "Original summaries based on publicly available FitSM documentation"
+    languages:
+      - "en"
+
+  - name: "DORA Metrics & SPACE Framework"
+    authority: "DORA Team (Google Cloud)"
+    official_portal: "https://dora.dev/"
+    canonical_identifier: "DORA Metrics (2023)"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Public Research"
+      url: "https://dora.dev/"
+      summary: "DORA research is publicly available. Descriptions are original summaries based on published findings."
+    coverage:
+      scope: "15 items covering DORA 4 key metrics + SPACE developer productivity dimensions"
+      limitations: "Original summaries based on public research publications"
+    languages:
+      - "en"
+
+  - name: "DAMA-DMBOK2"
+    authority: "DAMA International"
+    official_portal: "https://www.dama.org/cpages/body-of-knowledge"
+    canonical_identifier: "DAMA-DMBOK2"
+    retrieval_method: "MANUAL_CURATION"
+    api_documentation: ~
+    update_frequency: "manual"
+    last_ingested: "2026-02-25"
+    license_or_terms:
+      type: "Proprietary (metadata only)"
+      url: "https://www.dama.org/cpages/body-of-knowledge"
+      summary: "No DAMA copyrighted text reproduced. Knowledge area names and original summary descriptions only."
+    coverage:
+      scope: "37 items across 11 data management knowledge areas"
+      limitations: "Metadata only — original summaries, not copyrighted DMBOK text"
+    languages:
+      - "en"
+
+data_freshness:
+  automated_checks: false
+  check_frequency: "quarterly"
+  last_verified: "2026-02-25"
