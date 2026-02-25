@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.vercel/
+
+# Data artifacts
+data/source/
+*.log
+data/*.db
+data/*.db.gz
+.env
+.env.*
+.claude/
