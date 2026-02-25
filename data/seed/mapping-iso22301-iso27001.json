@@ -1,0 +1,12 @@
+[
+  { "source_item_id": "ISO22301-4.1", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-4.1", "relationship": "aligned", "confidence": 0.9, "notes": "Both standards require understanding organizational context using Annex SL structure" },
+  { "source_item_id": "ISO22301-4.2", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-4.2", "relationship": "aligned", "confidence": 0.9, "notes": "Both require identification of interested parties and their requirements" },
+  { "source_item_id": "ISO22301-6.1", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-6.1", "relationship": "aligned", "confidence": 0.85, "notes": "Both require risk-based approach to planning" },
+  { "source_item_id": "ISO22301-8.2", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-6.1.2", "relationship": "supports", "confidence": 0.8, "notes": "ISO 22301 BIA supports ISO 27001 risk assessment" },
+  { "source_item_id": "ISO22301-8.4", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-A.17", "relationship": "implements", "confidence": 0.9, "notes": "ISO 22301 BC plans implement ISO 27001 business continuity controls" },
+  { "source_item_id": "ISO22301-8.5", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-A.17.1.3", "relationship": "implements", "confidence": 0.9, "notes": "ISO 22301 exercise programme implements ISO 27001 requirement to verify continuity controls" },
+  { "source_item_id": "ISO22301-7.4", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-A.16", "relationship": "supports", "confidence": 0.75, "notes": "ISO 22301 crisis communication supports ISO 27001 incident management communication" },
+  { "source_item_id": "ISO22301-9.2", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-9.2", "relationship": "aligned", "confidence": 0.9, "notes": "Both require internal audit programmes" },
+  { "source_item_id": "ISO22301-9.3", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-9.3", "relationship": "aligned", "confidence": 0.9, "notes": "Both require management review" },
+  { "source_item_id": "ISO22301-10.1", "target_external_mcp": "security-controls-mcp", "target_external_id": "ISO27001-10.1", "relationship": "aligned", "confidence": 0.9, "notes": "Both require nonconformity and corrective action processes" }
+]
