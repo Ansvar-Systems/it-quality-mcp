@@ -1,0 +1,134 @@
+{
+  "version": "1.0",
+  "mcp_name": "IT Quality MCP",
+  "tests": [
+    {
+      "id": "itq-001",
+      "category": "data_retrieval",
+      "description": "Retrieve ITIL 4 Incident Management practice",
+      "tool": "get_practice",
+      "input": { "item_id": "ITIL4-IM" },
+      "assertions": { "result_not_empty": true, "text_contains": ["Incident management"] }
+    },
+    {
+      "id": "itq-002",
+      "category": "data_retrieval",
+      "description": "Retrieve COBIT DSS02 objective",
+      "tool": "get_practice",
+      "input": { "item_id": "COBIT-DSS02" },
+      "assertions": { "result_not_empty": true, "text_contains": ["DSS02"] }
+    },
+    {
+      "id": "itq-003",
+      "category": "data_retrieval",
+      "description": "Get ITIL 4 framework details",
+      "tool": "get_framework",
+      "input": { "framework_id": "itil4" },
+      "assertions": { "result_not_empty": true, "text_contains": ["ITIL"] }
+    },
+    {
+      "id": "itq-004",
+      "category": "search",
+      "description": "Search for change management",
+      "tool": "search_practices",
+      "input": { "query": "change management" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "itq-005",
+      "category": "search",
+      "description": "Search business continuity in BC domain",
+      "tool": "search_practices",
+      "input": { "query": "business continuity", "domain": "bc" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "itq-006",
+      "category": "cross_reference",
+      "description": "Map COBIT to ITIL",
+      "tool": "map_controls",
+      "input": { "source_framework": "cobit2019", "target_framework": "itil4" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "itq-007",
+      "category": "negative_test",
+      "description": "Get nonexistent practice returns error",
+      "tool": "get_practice",
+      "input": { "item_id": "NONEXISTENT-99" },
+      "assertions": { "is_error": true }
+    },
+    {
+      "id": "itq-008",
+      "category": "negative_test",
+      "description": "Search with nonsense query returns empty",
+      "tool": "search_practices",
+      "input": { "query": "xyzzyplugh999" },
+      "assertions": { "result_empty": true }
+    },
+    {
+      "id": "itq-009",
+      "category": "meta_tool",
+      "description": "About returns server info",
+      "tool": "about",
+      "input": {},
+      "assertions": { "result_not_empty": true, "text_contains": ["it-quality-mcp"] }
+    },
+    {
+      "id": "itq-010",
+      "category": "meta_tool",
+      "description": "Check data freshness returns report",
+      "tool": "check_data_freshness",
+      "input": {},
+      "assertions": { "result_not_empty": true }
+    },
+    {
+      "id": "itq-011",
+      "category": "search",
+      "description": "Get SLA templates for availability category",
+      "tool": "get_sla_templates",
+      "input": { "category": "availability" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "itq-012",
+      "category": "data_retrieval",
+      "description": "Get CMMI maturity model levels",
+      "tool": "get_maturity_model",
+      "input": { "framework_id": "cmmi" },
+      "assertions": { "result_not_empty": true }
+    },
+    {
+      "id": "itq-013",
+      "category": "meta_tool",
+      "description": "List sources returns all 12 frameworks",
+      "tool": "list_sources",
+      "input": {},
+      "assertions": { "result_not_empty": true, "min_results": 12 }
+    },
+    {
+      "id": "itq-014",
+      "category": "data_retrieval",
+      "description": "List all frameworks",
+      "tool": "list_frameworks",
+      "input": {},
+      "assertions": { "result_not_empty": true, "min_results": 12 }
+    },
+    {
+      "id": "itq-015",
+      "category": "search",
+      "description": "Browse ITSM domain items",
+      "tool": "search_by_domain",
+      "input": { "domain": "itsm" },
+      "assertions": { "result_not_empty": true, "min_results": 1 }
+    },
+    {
+      "id": "itq-016",
+      "category": "cross_reference",
+      "description": "Compare ITIL 4 vs ISO 20000",
+      "tool": "compare_frameworks",
+      "input": { "framework_a": "itil4", "framework_b": "iso20000" },
+      "assertions": { "result_not_empty": true }
+    }
+  ]
+}
