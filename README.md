@@ -8,44 +8,7 @@ ITIL 4, COBIT 2019, ISO 20000, ISO 22301, CMMI, and 7 more IT quality frameworks
 
 ## Quick Start
 
-### Remote (Streamable HTTP)
-
-No installation required. Add to your MCP client config:
-
-**Claude Desktop** (`claude_desktop_config.json`):
-```json
-{
-  "mcpServers": {
-    "it-quality": {
-      "url": "https://it-quality-mcp.vercel.app/mcp"
-    }
-  }
-}
-```
-
-**Cursor** (`.cursor/mcp.json`):
-```json
-{
-  "mcpServers": {
-    "it-quality": {
-      "url": "https://it-quality-mcp.vercel.app/mcp"
-    }
-  }
-}
-```
-
-**VS Code** (`.vscode/mcp.json`):
-```json
-{
-  "servers": {
-    "it-quality": {
-      "url": "https://it-quality-mcp.vercel.app/mcp"
-    }
-  }
-}
-```
-
-### Local (stdio via npm)
+### Local (stdio)
 
 ```bash
 npx @ansvar/it-quality-mcp
@@ -61,6 +24,20 @@ npx @ansvar/it-quality-mcp
     }
   }
 }
+```
+
+**Claude Code:**
+```bash
+claude mcp add it-quality -- npx -y @ansvar/it-quality-mcp
+```
+
+### Standalone HTTP Server
+
+For Docker or network access, run the built-in HTTP server:
+
+```bash
+npm start -- --http  # or: node dist/http-server.js
+# Listening on http://localhost:3000/mcp
 ```
 
 ## What's Included
@@ -152,7 +129,7 @@ This server is part of the [Ansvar MCP Network](https://ansvar.ai/mcp) -- a coll
 feature-branch -> PR to dev -> verify on dev -> PR to main -> deploy
 ```
 
-All changes target the `dev` branch first. The `main` branch triggers npm publish and Vercel deployment.
+All changes target the `dev` branch first. The `main` branch triggers npm publish.
 
 ### Setup
 

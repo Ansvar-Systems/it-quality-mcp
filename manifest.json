@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "IT Quality MCP — ITIL 4, COBIT 2019, ISO 20000, CMMI, and more via Model Context Protocol",
   "tools": 15,
-  "transport": ["stdio", "streamable-http"],
+  "transport": ["stdio"],
   "category": "domain_intelligence"
 }

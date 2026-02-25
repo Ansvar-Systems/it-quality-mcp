@@ -8,5 +8,5 @@
   "category": "reference",
   "tags": ["mcp", "itil", "cobit", "itsm", "it-governance", "iso20000", "cmmi", "sla", "compliance", "cybersecurity"],
   "license": "Apache-2.0",
-  "transport": ["stdio", "streamable-http"]
+  "transport": ["stdio"]
 }

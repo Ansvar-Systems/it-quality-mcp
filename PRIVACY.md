@@ -18,10 +18,6 @@ npx @ansvar/it-quality-mcp
 
 When running locally, all processing happens on your machine. No data leaves your environment.
 
-## Remote (Vercel)
-
-When using the remote Streamable HTTP endpoint hosted on Vercel, your MCP tool call requests are processed by Vercel's serverless infrastructure. Vercel may collect standard infrastructure logs (IP addresses, request metadata) per their [privacy policy](https://vercel.com/legal/privacy-policy). The IT Quality MCP application layer does not add any additional logging or tracking.
-
 ## No Cookies, Analytics, or Tracking
 
 This MCP server uses:
