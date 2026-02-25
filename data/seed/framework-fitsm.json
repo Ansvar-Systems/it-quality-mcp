@@ -1,0 +1,243 @@
+{
+  "id": "fitsm",
+  "name": "FitSM",
+  "version": "2.4",
+  "authority": "FitSM Community (GEANT)",
+  "domain": "itsm",
+  "description": "Lightweight IT service management standard designed specifically for smaller IT organizations and federated service environments. FitSM defines 14 IT service management processes that can be implemented with proportionate effort. Freely available under Creative Commons license.",
+  "url": "https://fitsm.eu/",
+  "license_note": "FitSM is published under CC-BY 4.0 license. Descriptions are original summaries based on publicly available FitSM documentation.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "FITSM-SPM",
+      "title": "Service Portfolio Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Manages the service portfolio throughout the lifecycle of services, from conceptualization through to retirement. Defines and maintains the portfolio of services including service descriptions, status, and categorization. Ensures new services are properly evaluated before being added to the portfolio.",
+      "purpose": "Manage the service portfolio to ensure services meet organizational needs throughout their lifecycle.",
+      "kpis": ["Number of services in portfolio", "Portfolio review frequency", "Service lifecycle stage tracking", "Service retirement timeliness"],
+      "tags": ["service-portfolio", "lifecycle", "service-catalogue", "planning"]
+    },
+    {
+      "item_id": "FITSM-SLM",
+      "title": "Service Level Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Defines, agrees, documents, and manages service levels for all services. Ensures service level targets are set in agreement with customers and that service delivery is monitored and reported against these targets. Drives improvement when targets are not met.",
+      "purpose": "Ensure agreed service level targets are defined, monitored, and met.",
+      "kpis": ["SLA compliance rate", "Number of SLA breaches", "Customer satisfaction score", "SLA review completion rate"],
+      "tags": ["service-levels", "sla", "targets", "monitoring", "reporting"]
+    },
+    {
+      "item_id": "FITSM-SRM",
+      "title": "Service Reporting Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Produces timely, reliable, and accurate reports on service performance and management activities. Defines reporting requirements, generates reports on agreed schedules, and ensures reports contain meaningful information for decision-making.",
+      "purpose": "Produce timely and accurate reports on service performance for stakeholders.",
+      "kpis": ["Report delivery timeliness", "Report accuracy rate", "Stakeholder satisfaction with reports", "Reporting coverage"],
+      "tags": ["reporting", "service-reporting", "performance", "dashboards"]
+    },
+    {
+      "item_id": "FITSM-SCM",
+      "title": "Service Continuity and Availability Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Ensures that service availability and continuity commitments can be met under all circumstances, including after major incidents or disasters. Covers availability monitoring, continuity planning, testing of continuity plans, and risk assessment for service disruptions.",
+      "purpose": "Ensure service availability targets are met and services can recover from major disruptions.",
+      "kpis": ["Service availability percentage", "Continuity plan test results", "Recovery time achieved vs target", "Risk assessment currency"],
+      "tags": ["availability", "continuity", "disaster-recovery", "resilience", "rto"]
+    },
+    {
+      "item_id": "FITSM-CAPM",
+      "title": "Capacity Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Ensures that sufficient capacity is available at all times to meet the agreed service level targets. Monitors current capacity utilization, forecasts future capacity needs, and plans capacity adjustments to prevent service degradation.",
+      "purpose": "Ensure adequate capacity to meet service level commitments.",
+      "kpis": ["Capacity utilization rate", "Capacity forecast accuracy", "Capacity-related incidents", "Capacity plan update frequency"],
+      "tags": ["capacity", "planning", "forecasting", "scalability", "utilization"]
+    },
+    {
+      "item_id": "FITSM-ISCSM",
+      "title": "Information Security Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Manages information security to ensure confidentiality, integrity, and availability of information assets. Defines security policies, conducts risk assessments, implements security controls, and manages security incidents. Proportionate to organizational risk profile.",
+      "purpose": "Manage information security risks through policies, controls, and incident response.",
+      "kpis": ["Security incident count", "Security control compliance rate", "Risk assessment completion", "Security awareness training coverage"],
+      "tags": ["information-security", "confidentiality", "integrity", "availability", "risk"]
+    },
+    {
+      "item_id": "FITSM-AVSM",
+      "title": "Customer Relationship Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Manages the relationship with customers to understand their needs and ensure satisfaction with the services provided. Covers customer communication, feedback collection, complaint handling, and regular service review meetings.",
+      "purpose": "Manage customer relationships to ensure understanding of needs and satisfaction.",
+      "kpis": ["Customer satisfaction score", "Complaint resolution time", "Service review meeting frequency", "Customer feedback response rate"],
+      "tags": ["customer-relationship", "satisfaction", "feedback", "communication"]
+    },
+    {
+      "item_id": "FITSM-SUPM",
+      "title": "Supplier Relationship Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Manages relationships with suppliers to ensure they deliver services according to agreed terms. Covers supplier evaluation, contract management, performance monitoring, and regular supplier reviews.",
+      "purpose": "Manage supplier relationships and ensure contractual performance.",
+      "kpis": ["Supplier SLA compliance", "Supplier incident count", "Supplier review frequency", "Contract compliance rate"],
+      "tags": ["supplier", "vendor", "contract", "procurement", "third-party"]
+    },
+    {
+      "item_id": "FITSM-INCRM",
+      "title": "Incident and Service Request Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Handles incidents to restore normal service operation as quickly as possible, and fulfills service requests according to agreed procedures. Covers incident detection, logging, classification, prioritization, escalation, resolution, and closure, as well as service request fulfillment.",
+      "purpose": "Restore normal service after incidents and fulfill service requests efficiently.",
+      "kpis": ["Mean time to resolve", "First-contact resolution rate", "Incident backlog", "Service request fulfillment time", "Customer satisfaction with support"],
+      "tags": ["incident", "service-request", "resolution", "service-desk", "support"]
+    },
+    {
+      "item_id": "FITSM-PM",
+      "title": "Problem Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Identifies and manages the root causes of incidents to prevent recurrence and minimize the impact of incidents that cannot be prevented. Maintains known error records and workaround documentation.",
+      "purpose": "Prevent incident recurrence through root cause analysis and resolution.",
+      "kpis": ["Problems identified", "Root cause analysis completion rate", "Known errors documented", "Recurring incident reduction"],
+      "tags": ["problem", "root-cause", "known-error", "workaround", "prevention"]
+    },
+    {
+      "item_id": "FITSM-CHM",
+      "title": "Change Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Controls the lifecycle of all changes to services and their components. Ensures changes are assessed for risk and impact, properly authorized, implemented in a controlled manner, and reviewed after implementation.",
+      "purpose": "Control changes to minimize risk while enabling beneficial modifications.",
+      "kpis": ["Change success rate", "Emergency change ratio", "Change-related incidents", "Change lead time"],
+      "tags": ["change-management", "authorization", "impact-assessment", "risk-assessment"]
+    },
+    {
+      "item_id": "FITSM-RDM",
+      "title": "Release and Deployment Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Plans, schedules, and controls the movement of releases to the live environment. Ensures releases are deployed successfully with minimal disruption to services. Covers release planning, build, testing, and deployment activities.",
+      "purpose": "Plan and control releases to ensure successful deployment with minimal disruption.",
+      "kpis": ["Release success rate", "Deployment frequency", "Release-related incidents", "Release lead time"],
+      "tags": ["release", "deployment", "rollout", "go-live"]
+    },
+    {
+      "item_id": "FITSM-CONM",
+      "title": "Configuration Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Maintains information about configuration items required to deliver services, including their relationships. Ensures accurate configuration information is available to support other service management processes.",
+      "purpose": "Maintain accurate configuration information to support service management.",
+      "kpis": ["CMDB accuracy rate", "CI discovery coverage", "Configuration audit pass rate", "Relationship mapping completeness"],
+      "tags": ["configuration", "cmdb", "configuration-items", "relationships"]
+    },
+    {
+      "item_id": "FITSM-CSI",
+      "title": "Continual Service Improvement Management",
+      "domain": "itsm",
+      "category": "core",
+      "description": "Ensures continual improvement of services and service management processes. Identifies improvement opportunities from various sources, prioritizes them, implements improvements, and measures their effectiveness.",
+      "purpose": "Drive continual improvement of services and service management processes.",
+      "kpis": ["Improvement initiatives registered", "Improvements completed on schedule", "Measurable improvement in targeted areas", "Improvement ROI"],
+      "tags": ["improvement", "continual-improvement", "optimization", "effectiveness"]
+    },
+    {
+      "item_id": "FITSM-GEN-POLICY",
+      "title": "Service management policy",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall establish and maintain a documented service management policy that includes the scope of the SMS, commitment to meeting service requirements, and commitment to continual improvement. The policy shall be communicated to all relevant parties.",
+      "purpose": "Establish the overarching service management policy for the organization.",
+      "tags": ["policy", "commitment", "scope", "governance"]
+    },
+    {
+      "item_id": "FITSM-GEN-PLAN",
+      "title": "Service management plan",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall create and maintain a service management plan that describes the approach to implementing and operating the SMS. The plan shall include objectives, roles, resources, and timelines.",
+      "purpose": "Document the approach for implementing and operating the service management system.",
+      "tags": ["planning", "service-management-plan", "implementation", "objectives"]
+    },
+    {
+      "item_id": "FITSM-GEN-ROLES",
+      "title": "Roles and responsibilities",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall define, document, and communicate roles and responsibilities for service management activities. Key roles shall be assigned with clear authority and accountability.",
+      "purpose": "Define and communicate roles and responsibilities for service management.",
+      "tags": ["roles", "responsibilities", "accountability", "organization"]
+    },
+    {
+      "item_id": "FITSM-GEN-DOC",
+      "title": "Documentation management",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall manage documentation related to the SMS, including policies, plans, process descriptions, records, and reports. Documentation shall be controlled, current, and accessible to relevant parties.",
+      "purpose": "Manage SMS documentation to ensure it is controlled, current, and accessible.",
+      "tags": ["documentation", "records", "document-control", "policies"]
+    },
+    {
+      "item_id": "FITSM-GEN-AUDIT",
+      "title": "Internal assessment and audit",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall conduct regular internal assessments to evaluate the conformance and effectiveness of the SMS. Assessment results shall be used to identify areas for improvement.",
+      "purpose": "Evaluate SMS conformance and effectiveness through internal assessment.",
+      "tags": ["audit", "assessment", "conformance", "effectiveness"]
+    },
+    {
+      "item_id": "FITSM-GEN-MGMTREV",
+      "title": "Management commitment and review",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Top management shall demonstrate commitment to the SMS and conduct regular management reviews. Reviews shall consider performance data, audit results, customer feedback, and improvement opportunities.",
+      "purpose": "Ensure management commitment and regular review of the SMS.",
+      "tags": ["management-review", "commitment", "leadership", "governance"]
+    },
+    {
+      "item_id": "FITSM-GEN-COMP",
+      "title": "Competence and training",
+      "domain": "itsm",
+      "category": "general-requirement",
+      "description": "Organizations shall ensure that personnel performing service management activities are competent. Competence requirements shall be identified, training provided where needed, and training effectiveness evaluated.",
+      "purpose": "Ensure staff competence for service management activities through training.",
+      "tags": ["competence", "training", "skills", "qualification"]
+    },
+    {
+      "item_id": "FITSM-FED-GOVMOD",
+      "title": "Federation governance model",
+      "domain": "itsm",
+      "category": "federation",
+      "description": "In federated service environments, a governance model shall be established that defines how participating organizations collaborate in service delivery. Covers decision-making, conflict resolution, and shared accountability.",
+      "purpose": "Establish governance for federated service delivery environments.",
+      "tags": ["federation", "governance", "collaboration", "multi-provider"]
+    },
+    {
+      "item_id": "FITSM-FED-INTMGMT",
+      "title": "Federation interface management",
+      "domain": "itsm",
+      "category": "federation",
+      "description": "In federated environments, interfaces between participating organizations shall be defined and managed. Covers operational interfaces, escalation paths, information exchange, and coordination mechanisms.",
+      "purpose": "Manage interfaces between organizations in federated service delivery.",
+      "tags": ["federation", "interfaces", "coordination", "multi-provider"]
+    },
+    {
+      "item_id": "FITSM-FED-COMMSTD",
+      "title": "Federation common standards",
+      "domain": "itsm",
+      "category": "federation",
+      "description": "Federated service environments shall agree on common standards and practices for key service management activities. Covers shared terminology, common tools, agreed processes, and minimum quality standards.",
+      "purpose": "Establish common standards across federated service delivery organizations.",
+      "tags": ["federation", "standards", "harmonization", "common-practices"]
+    }
+  ]
+}

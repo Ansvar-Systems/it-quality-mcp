@@ -1,0 +1,383 @@
+{
+  "id": "dama_dmbok",
+  "name": "DAMA-DMBOK2",
+  "version": "2",
+  "authority": "DAMA International",
+  "domain": "data",
+  "description": "Data Management Body of Knowledge, 2nd edition. A comprehensive guide to data management covering 11 knowledge areas. Provides a functional framework for implementing enterprise data management practices covering governance, architecture, modeling, storage, security, integration, quality, and related disciplines.",
+  "url": "https://www.dama.org/cpages/body-of-knowledge",
+  "license_note": "Metadata only. No DAMA copyrighted text reproduced. Knowledge area descriptions are original summaries.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "DAMA-DG",
+      "title": "Data Governance",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Provides the overarching framework for exercising authority, control, and shared decision-making over the management of data assets. Establishes data governance strategy, policies, standards, roles, and organizational bodies. Serves as the central knowledge area that connects all other data management functions.",
+      "purpose": "Exercise authority and control over data management through governance structures and policies.",
+      "kpis": ["Data governance maturity score", "Policy compliance rate", "Data stewardship coverage", "Data council meeting frequency"],
+      "tags": ["governance", "data-governance", "policy", "standards", "stewardship"]
+    },
+    {
+      "item_id": "DAMA-DG-STRAT",
+      "title": "Data governance strategy",
+      "domain": "data",
+      "category": "data-governance",
+      "description": "Defines the vision, mission, principles, and roadmap for data governance within the organization. Aligns data governance with business strategy and establishes the scope and priorities for data management initiatives.",
+      "purpose": "Define the strategic direction for data governance aligned with business goals.",
+      "tags": ["strategy", "vision", "roadmap", "alignment"],
+      "related_items": ["DAMA-DG"]
+    },
+    {
+      "item_id": "DAMA-DG-ORG",
+      "title": "Data governance organization",
+      "domain": "data",
+      "category": "data-governance",
+      "description": "Establishes organizational structures for data governance including data governance council, data stewards, data owners, and data custodians. Defines roles, responsibilities, and decision-making authority.",
+      "purpose": "Establish organizational structures and roles for data governance.",
+      "tags": ["organization", "roles", "stewards", "data-owners", "council"],
+      "related_items": ["DAMA-DG"]
+    },
+    {
+      "item_id": "DAMA-DG-POLICY",
+      "title": "Data policies and standards",
+      "domain": "data",
+      "category": "data-governance",
+      "description": "Develops and maintains data policies, standards, and guidelines that govern how data is created, acquired, maintained, used, and disposed of across the organization.",
+      "purpose": "Establish policies and standards governing data management across the organization.",
+      "tags": ["policy", "standards", "guidelines", "rules"],
+      "related_items": ["DAMA-DG"]
+    },
+    {
+      "item_id": "DAMA-DA",
+      "title": "Data Architecture",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Defines the blueprint for managing data assets by aligning with organizational strategy to establish strategic data requirements and designs to meet those requirements. Covers enterprise data models, data flow diagrams, and data architecture principles.",
+      "purpose": "Define the blueprint for managing data assets aligned with organizational strategy.",
+      "kpis": ["Architecture compliance rate", "Data model coverage", "Architecture review completion", "Technical debt reduction"],
+      "tags": ["architecture", "data-architecture", "enterprise-data-model", "data-flow"]
+    },
+    {
+      "item_id": "DAMA-DA-EDM",
+      "title": "Enterprise data model",
+      "domain": "data",
+      "category": "data-architecture",
+      "description": "Creates and maintains a high-level, integrated data model that provides a common vocabulary and structure for understanding key data entities and their relationships across the enterprise.",
+      "purpose": "Provide a common enterprise-wide understanding of key data entities and relationships.",
+      "tags": ["enterprise-data-model", "conceptual-model", "data-entities", "relationships"],
+      "related_items": ["DAMA-DA"]
+    },
+    {
+      "item_id": "DAMA-DA-FLOW",
+      "title": "Data flow architecture",
+      "domain": "data",
+      "category": "data-architecture",
+      "description": "Maps how data moves through the organization, from source systems through integration layers to consumption points. Identifies data lineage and supports impact analysis for changes to data systems.",
+      "purpose": "Document and manage how data flows through organizational systems.",
+      "tags": ["data-flow", "data-lineage", "integration", "source-to-target"],
+      "related_items": ["DAMA-DA"]
+    },
+    {
+      "item_id": "DAMA-DMD",
+      "title": "Data Modeling and Design",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Discovers, analyzes, represents, and communicates data requirements in a precise form called the data model. Covers conceptual, logical, and physical data modeling using various notations and techniques to represent data structures and relationships.",
+      "purpose": "Represent data requirements through precise data models at conceptual, logical, and physical levels.",
+      "kpis": ["Model coverage of critical data", "Model currency percentage", "Naming standard compliance", "Model review completion rate"],
+      "tags": ["data-modeling", "data-design", "conceptual", "logical", "physical"]
+    },
+    {
+      "item_id": "DAMA-DMD-CONCEPT",
+      "title": "Conceptual data modeling",
+      "domain": "data",
+      "category": "data-modeling",
+      "description": "Creates high-level representations of key business entities and their relationships, independent of technology. Used to communicate with business stakeholders and establish common understanding of core data concepts.",
+      "purpose": "Represent key business entities and relationships at a technology-independent level.",
+      "tags": ["conceptual-model", "business-entities", "relationships", "stakeholder-communication"],
+      "related_items": ["DAMA-DMD"]
+    },
+    {
+      "item_id": "DAMA-DMD-LOGICAL",
+      "title": "Logical data modeling",
+      "domain": "data",
+      "category": "data-modeling",
+      "description": "Creates detailed data models that define data structures, attributes, data types, and business rules without specifying physical implementation details. Serves as a bridge between conceptual models and physical database designs.",
+      "purpose": "Define detailed data structures and rules independent of physical implementation.",
+      "tags": ["logical-model", "attributes", "data-types", "normalization"],
+      "related_items": ["DAMA-DMD"]
+    },
+    {
+      "item_id": "DAMA-DMD-PHYSICAL",
+      "title": "Physical data modeling",
+      "domain": "data",
+      "category": "data-modeling",
+      "description": "Creates technology-specific data models that define tables, columns, indexes, partitions, and other physical structures optimized for the target database platform. Includes performance tuning considerations.",
+      "purpose": "Define technology-specific physical data structures optimized for target platforms.",
+      "tags": ["physical-model", "tables", "indexes", "performance", "database-design"],
+      "related_items": ["DAMA-DMD"]
+    },
+    {
+      "item_id": "DAMA-DSO",
+      "title": "Data Storage and Operations",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Covers the design, implementation, and management of data storage to maximize the value of data throughout its lifecycle. Includes database administration, data archiving, backup and recovery, and database performance optimization.",
+      "purpose": "Design and manage data storage and database operations throughout the data lifecycle.",
+      "kpis": ["Database availability percentage", "Backup success rate", "Storage utilization efficiency", "Recovery test pass rate"],
+      "tags": ["storage", "database", "operations", "dba", "backup", "recovery"]
+    },
+    {
+      "item_id": "DAMA-DSO-DBA",
+      "title": "Database administration",
+      "domain": "data",
+      "category": "data-storage",
+      "description": "Manages the day-to-day operations of database systems including performance monitoring, capacity planning, patching, access control, and troubleshooting. Covers both relational and non-relational database platforms.",
+      "purpose": "Manage database system operations for performance, availability, and security.",
+      "tags": ["dba", "database-administration", "performance", "monitoring"],
+      "related_items": ["DAMA-DSO"]
+    },
+    {
+      "item_id": "DAMA-DSO-ARCH",
+      "title": "Data archiving and retention",
+      "domain": "data",
+      "category": "data-storage",
+      "description": "Manages the archiving and retention of data according to business requirements, regulatory obligations, and cost optimization goals. Defines retention policies and implements archiving strategies.",
+      "purpose": "Manage data archiving and retention in compliance with policies and regulations.",
+      "tags": ["archiving", "retention", "lifecycle", "compliance", "storage-optimization"],
+      "related_items": ["DAMA-DSO"]
+    },
+    {
+      "item_id": "DAMA-DSEC",
+      "title": "Data Security",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Ensures proper authentication, authorization, access, and auditing of data and information assets. Covers data classification, encryption, masking, access control, privacy protection, and security monitoring to protect data from unauthorized access and breaches.",
+      "purpose": "Protect data assets through authentication, authorization, access control, and auditing.",
+      "kpis": ["Data breach count", "Access control compliance", "Encryption coverage", "Security audit findings", "Data classification coverage"],
+      "tags": ["data-security", "access-control", "encryption", "classification", "privacy"]
+    },
+    {
+      "item_id": "DAMA-DSEC-CLASS",
+      "title": "Data classification",
+      "domain": "data",
+      "category": "data-security",
+      "description": "Categorizes data based on its sensitivity and criticality to determine appropriate protection levels. Establishes classification schemes and labels that guide data handling, storage, and sharing practices.",
+      "purpose": "Classify data by sensitivity to determine appropriate protection and handling.",
+      "tags": ["classification", "sensitivity", "labeling", "data-handling"],
+      "related_items": ["DAMA-DSEC"]
+    },
+    {
+      "item_id": "DAMA-DSEC-ACCESS",
+      "title": "Data access control",
+      "domain": "data",
+      "category": "data-security",
+      "description": "Implements mechanisms to control who can access what data and under what conditions. Covers role-based access, attribute-based access, row-level security, column masking, and access request and approval workflows.",
+      "purpose": "Control data access through authorization mechanisms aligned with business needs.",
+      "tags": ["access-control", "authorization", "rbac", "data-masking"],
+      "related_items": ["DAMA-DSEC"]
+    },
+    {
+      "item_id": "DAMA-DII",
+      "title": "Data Integration and Interoperability",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Covers processes related to the movement and consolidation of data within and between data stores, applications, and organizations. Includes ETL/ELT, data replication, data virtualization, messaging, and API-based data exchange.",
+      "purpose": "Move and consolidate data between systems using integration and interoperability patterns.",
+      "kpis": ["Integration pipeline success rate", "Data latency", "Data freshness SLA compliance", "Integration error rate"],
+      "tags": ["integration", "etl", "data-exchange", "interoperability", "api"]
+    },
+    {
+      "item_id": "DAMA-DII-ETL",
+      "title": "ETL/ELT processing",
+      "domain": "data",
+      "category": "data-integration",
+      "description": "Designs and operates extract-transform-load (ETL) or extract-load-transform (ELT) processes that move data from source systems, apply transformations, and load into target systems. Covers batch processing, incremental loading, and change data capture.",
+      "purpose": "Extract, transform, and load data between source and target systems.",
+      "tags": ["etl", "elt", "batch-processing", "data-pipeline", "transformation"],
+      "related_items": ["DAMA-DII"]
+    },
+    {
+      "item_id": "DAMA-DII-VIRT",
+      "title": "Data virtualization",
+      "domain": "data",
+      "category": "data-integration",
+      "description": "Provides a unified view of data from multiple sources without physically moving the data. Creates a virtual integration layer that enables querying across disparate systems as if they were a single data source.",
+      "purpose": "Provide unified data access without physical data movement through virtualization.",
+      "tags": ["virtualization", "federation", "unified-access", "abstraction"],
+      "related_items": ["DAMA-DII"]
+    },
+    {
+      "item_id": "DAMA-DCM",
+      "title": "Document and Content Management",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Manages the lifecycle of data found in unstructured and semi-structured formats including documents, spreadsheets, presentations, images, video, and web content. Covers content creation, storage, retrieval, version control, and archival.",
+      "purpose": "Manage the lifecycle of unstructured and semi-structured content assets.",
+      "kpis": ["Content findability score", "Version control compliance", "Content lifecycle adherence", "Document retrieval time"],
+      "tags": ["content-management", "document-management", "unstructured-data", "ecm"]
+    },
+    {
+      "item_id": "DAMA-DCM-LIFECYCLE",
+      "title": "Content lifecycle management",
+      "domain": "data",
+      "category": "content-management",
+      "description": "Manages the lifecycle of content from creation through use, archival, and disposal. Defines content types, metadata standards, retention rules, and disposition procedures.",
+      "purpose": "Manage content through its entire lifecycle from creation to disposition.",
+      "tags": ["content-lifecycle", "retention", "disposition", "metadata"],
+      "related_items": ["DAMA-DCM"]
+    },
+    {
+      "item_id": "DAMA-RMD",
+      "title": "Reference and Master Data",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Manages shared data that provides context for transactions and analytical activities. Reference data includes standardized codes, classifications, and lookup values. Master data represents core business entities (customers, products, locations) that need consistent definition across the enterprise.",
+      "purpose": "Manage shared reference and master data for enterprise consistency.",
+      "kpis": ["Master data match rate", "Golden record coverage", "Reference data update timeliness", "Cross-system consistency score"],
+      "tags": ["master-data", "reference-data", "mdm", "golden-record", "data-consistency"]
+    },
+    {
+      "item_id": "DAMA-RMD-MDM",
+      "title": "Master data management",
+      "domain": "data",
+      "category": "reference-master-data",
+      "description": "Implements processes and technology to create and maintain authoritative, reliable, sustainable, accurate, and secure master data. Covers matching, merging, survivorship rules, and distribution of golden records across systems.",
+      "purpose": "Create and maintain authoritative master data records across the enterprise.",
+      "tags": ["mdm", "master-data-management", "golden-record", "matching", "survivorship"],
+      "related_items": ["DAMA-RMD"]
+    },
+    {
+      "item_id": "DAMA-RMD-REF",
+      "title": "Reference data management",
+      "domain": "data",
+      "category": "reference-master-data",
+      "description": "Manages standardized reference data sets including code lists, classification schemes, and lookup values. Ensures reference data is consistent, authoritative, and properly versioned across all consuming systems.",
+      "purpose": "Manage standardized reference data for consistency across systems.",
+      "tags": ["reference-data", "code-lists", "classification", "standardization"],
+      "related_items": ["DAMA-RMD"]
+    },
+    {
+      "item_id": "DAMA-DWBI",
+      "title": "Data Warehousing and Business Intelligence",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Manages the analytical processing of data and the delivery of data for reporting, analysis, and decision support. Covers data warehouse design, dimensional modeling, BI platform management, reporting, dashboards, and advanced analytics delivery.",
+      "purpose": "Enable data-driven decision making through analytical processing and business intelligence.",
+      "kpis": ["Report accuracy rate", "BI adoption rate", "Data warehouse query performance", "Self-service analytics adoption"],
+      "tags": ["data-warehouse", "bi", "analytics", "reporting", "dimensional-modeling"]
+    },
+    {
+      "item_id": "DAMA-DWBI-DW",
+      "title": "Data warehouse design and management",
+      "domain": "data",
+      "category": "dw-bi",
+      "description": "Designs, builds, and manages the enterprise data warehouse including dimensional models, fact tables, dimension tables, slowly changing dimensions, and ETL processes feeding the warehouse.",
+      "purpose": "Design and manage the enterprise data warehouse for analytical processing.",
+      "tags": ["data-warehouse", "dimensional-model", "star-schema", "etl"],
+      "related_items": ["DAMA-DWBI"]
+    },
+    {
+      "item_id": "DAMA-DWBI-BI",
+      "title": "Business intelligence and reporting",
+      "domain": "data",
+      "category": "dw-bi",
+      "description": "Delivers BI capabilities including standard reports, ad-hoc queries, dashboards, scorecards, and self-service analytics. Manages BI tool platforms and ensures users have access to timely and accurate analytical data.",
+      "purpose": "Deliver business intelligence and reporting capabilities to support decision making.",
+      "tags": ["bi", "reporting", "dashboards", "self-service", "analytics"],
+      "related_items": ["DAMA-DWBI"]
+    },
+    {
+      "item_id": "DAMA-META",
+      "title": "Metadata Management",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Plans, implements, and controls activities to provide access to high-quality, integrated metadata. Covers business, technical, and operational metadata capture, storage, integration, and delivery. Maintains data catalogs and data dictionaries as key metadata repositories.",
+      "purpose": "Manage metadata to enable understanding and effective use of data assets.",
+      "kpis": ["Metadata coverage percentage", "Data catalog adoption rate", "Business glossary completeness", "Metadata freshness"],
+      "tags": ["metadata", "data-catalog", "data-dictionary", "business-glossary"]
+    },
+    {
+      "item_id": "DAMA-META-CAT",
+      "title": "Data catalog management",
+      "domain": "data",
+      "category": "metadata",
+      "description": "Maintains a searchable inventory of data assets including datasets, tables, columns, and their metadata. Enables data discovery, understanding, and trust through rich descriptions, lineage, and quality indicators.",
+      "purpose": "Enable data discovery and understanding through a searchable data catalog.",
+      "tags": ["data-catalog", "discovery", "inventory", "search"],
+      "related_items": ["DAMA-META"]
+    },
+    {
+      "item_id": "DAMA-META-LINEAGE",
+      "title": "Data lineage tracking",
+      "domain": "data",
+      "category": "metadata",
+      "description": "Tracks the origin, movement, and transformation of data as it flows through systems. Enables impact analysis, regulatory compliance, data quality troubleshooting, and trust in data through transparent provenance.",
+      "purpose": "Track data provenance from origin through transformation to consumption.",
+      "tags": ["lineage", "provenance", "impact-analysis", "traceability"],
+      "related_items": ["DAMA-META"]
+    },
+    {
+      "item_id": "DAMA-DQ",
+      "title": "Data Quality",
+      "domain": "data",
+      "category": "knowledge-area",
+      "description": "Plans, implements, and controls activities that apply quality management techniques to ensure data is fit for consumption and meets the needs of data consumers. Covers data profiling, quality rules, monitoring, cleansing, and root cause analysis of quality issues.",
+      "purpose": "Ensure data fitness for use through quality management techniques.",
+      "kpis": ["Data quality score by domain", "Critical data element quality", "Quality rule pass rate", "Issue resolution time", "Data quality trend"],
+      "tags": ["data-quality", "profiling", "cleansing", "monitoring", "fitness-for-use"]
+    },
+    {
+      "item_id": "DAMA-DQ-PROFILE",
+      "title": "Data profiling",
+      "domain": "data",
+      "category": "data-quality",
+      "description": "Analyzes data to understand its structure, content, relationships, and quality characteristics. Identifies anomalies, patterns, and potential quality issues through statistical analysis, pattern matching, and cross-reference validation.",
+      "purpose": "Analyze data characteristics to identify quality issues and patterns.",
+      "tags": ["profiling", "analysis", "anomaly-detection", "patterns"],
+      "related_items": ["DAMA-DQ"]
+    },
+    {
+      "item_id": "DAMA-DQ-RULES",
+      "title": "Data quality rules and monitoring",
+      "domain": "data",
+      "category": "data-quality",
+      "description": "Defines business rules that data must satisfy (completeness, accuracy, consistency, timeliness, uniqueness, validity) and implements automated monitoring to detect violations. Tracks quality metrics over time and alerts when thresholds are breached.",
+      "purpose": "Define and monitor data quality rules to detect and alert on quality issues.",
+      "tags": ["quality-rules", "monitoring", "thresholds", "alerting", "sla"],
+      "related_items": ["DAMA-DQ"]
+    },
+    {
+      "item_id": "DAMA-DQ-RCA",
+      "title": "Data quality root cause analysis",
+      "domain": "data",
+      "category": "data-quality",
+      "description": "Investigates the root causes of data quality issues to implement permanent fixes rather than repeated cleansing. Analyzes data entry processes, system interfaces, and business processes to identify where quality degrades.",
+      "purpose": "Identify and address root causes of data quality issues.",
+      "tags": ["root-cause", "investigation", "process-improvement", "prevention"],
+      "related_items": ["DAMA-DQ"]
+    },
+    {
+      "item_id": "DAMA-ETHICS",
+      "title": "Data ethics",
+      "domain": "data",
+      "category": "cross-cutting",
+      "description": "Addresses ethical considerations in data collection, use, and sharing. Covers data privacy, algorithmic fairness, transparency in data use, consent management, and responsible use of data in analytics and AI.",
+      "purpose": "Ensure ethical and responsible data practices across the organization.",
+      "kpis": ["Privacy compliance rate", "Consent management coverage", "Ethics review completion rate", "Data subject request response time"],
+      "tags": ["ethics", "privacy", "fairness", "transparency", "consent", "responsible-data"]
+    },
+    {
+      "item_id": "DAMA-BDS",
+      "title": "Big data and data science",
+      "domain": "data",
+      "category": "cross-cutting",
+      "description": "Addresses management practices for big data environments and data science workloads. Covers data lake design, streaming data processing, machine learning model management, and the unique governance challenges of high-volume, high-velocity, and high-variety data.",
+      "purpose": "Manage big data environments and data science practices effectively.",
+      "kpis": ["Model deployment frequency", "Data lake query performance", "Feature store coverage", "ML model accuracy tracking"],
+      "tags": ["big-data", "data-science", "machine-learning", "data-lake", "streaming"]
+    }
+  ]
+}

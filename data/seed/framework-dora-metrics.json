@@ -1,0 +1,187 @@
+{
+  "id": "dora_metrics",
+  "name": "DORA Metrics & SPACE Framework",
+  "version": "2023",
+  "authority": "DORA Team (Google Cloud)",
+  "domain": "sdlc",
+  "description": "DevOps Research and Assessment (DORA) metrics measure software delivery performance through four key metrics. Extended with the SPACE framework for developer productivity. Based on the State of DevOps research programme covering thousands of organizations globally.",
+  "url": "https://dora.dev/",
+  "license_note": "DORA research is publicly available. Descriptions are original summaries based on published findings.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "DORA-DF",
+      "title": "Deployment Frequency",
+      "domain": "sdlc",
+      "category": "key-metric",
+      "description": "Measures how often an organization successfully releases to production. Higher deployment frequency indicates better delivery capabilities and shorter feedback loops. Elite performers deploy on-demand (multiple times per day), while low performers deploy between once per month and once every six months.",
+      "purpose": "Measure the frequency of production deployments as an indicator of delivery throughput.",
+      "kpis": ["Deployments per day/week/month", "Deployment trend over time", "Deployment frequency by team", "On-demand deploy capability"],
+      "tags": ["deployment", "frequency", "throughput", "devops", "continuous-delivery"],
+      "maturity_levels": {
+        "elite": "On-demand (multiple deploys per day)",
+        "high": "Between once per day and once per week",
+        "medium": "Between once per week and once per month",
+        "low": "Between once per month and once every six months"
+      }
+    },
+    {
+      "item_id": "DORA-LT",
+      "title": "Lead Time for Changes",
+      "domain": "sdlc",
+      "category": "key-metric",
+      "description": "Measures the time it takes to go from code committed to code successfully running in production. Shorter lead times indicate more efficient delivery pipelines and better engineering practices. Elite performers achieve less than one hour, while low performers take between one and six months.",
+      "purpose": "Measure the elapsed time from code commit to production deployment.",
+      "kpis": ["Median lead time", "Lead time percentiles (p50, p90, p99)", "Lead time trend", "Lead time by change type"],
+      "tags": ["lead-time", "cycle-time", "throughput", "devops", "pipeline-efficiency"],
+      "maturity_levels": {
+        "elite": "Less than one hour",
+        "high": "Between one day and one week",
+        "medium": "Between one week and one month",
+        "low": "Between one month and six months"
+      }
+    },
+    {
+      "item_id": "DORA-CFR",
+      "title": "Change Failure Rate",
+      "domain": "sdlc",
+      "category": "key-metric",
+      "description": "Measures the percentage of deployments causing a failure in production that requires remediation (e.g., rollback, hotfix, patch). Lower change failure rates indicate better testing, review, and quality practices. Elite performers have a rate between 0-5%, while low performers have 46-60%.",
+      "purpose": "Measure the percentage of production deployments that cause failures.",
+      "kpis": ["Change failure rate percentage", "Failed deployment count", "Failure rate trend", "Failure rate by deployment type"],
+      "tags": ["change-failure", "quality", "stability", "devops", "reliability"],
+      "maturity_levels": {
+        "elite": "0-5%",
+        "high": "6-10%",
+        "medium": "11-15%",
+        "low": "46-60%"
+      }
+    },
+    {
+      "item_id": "DORA-MTTR",
+      "title": "Time to Restore Service",
+      "domain": "sdlc",
+      "category": "key-metric",
+      "description": "Measures how long it takes to recover from a failure in production (e.g., service outage, degradation). Shorter restoration times indicate better incident response, monitoring, and recovery capabilities. Elite performers restore in less than one hour, while low performers take between one week and one month.",
+      "purpose": "Measure the time required to restore service after a production failure.",
+      "kpis": ["Median time to restore", "Restore time percentiles", "Restore time trend", "Restore time by severity"],
+      "tags": ["recovery", "mttr", "stability", "devops", "incident-response"],
+      "maturity_levels": {
+        "elite": "Less than one hour",
+        "high": "Less than one day",
+        "medium": "Between one day and one week",
+        "low": "Between one week and one month"
+      }
+    },
+    {
+      "item_id": "DORA-REL",
+      "title": "Reliability",
+      "domain": "sdlc",
+      "category": "key-metric",
+      "description": "Measures the ability to meet or exceed operational targets including availability, latency, performance, and error rate. Added to DORA as a fifth key metric recognizing that operational performance is as important as delivery speed. Measures whether teams meet their own reliability targets.",
+      "purpose": "Measure the degree to which teams meet their operational reliability targets.",
+      "kpis": ["SLO achievement rate", "Error budget burn rate", "Availability percentage", "Latency targets met"],
+      "tags": ["reliability", "slo", "sre", "availability", "operational-excellence"]
+    },
+    {
+      "item_id": "DORA-SPACE-S",
+      "title": "SPACE: Satisfaction and well-being",
+      "domain": "sdlc",
+      "category": "space-framework",
+      "description": "Measures developer satisfaction with their work, tools, team, and organization. Also covers well-being aspects such as burnout risk, work-life balance, and psychological safety. Satisfied developers tend to be more productive and creative.",
+      "purpose": "Assess developer satisfaction and well-being as a productivity dimension.",
+      "kpis": ["Developer satisfaction survey score", "Burnout risk index", "eNPS (employee Net Promoter Score)", "Tool satisfaction rating"],
+      "tags": ["satisfaction", "well-being", "developer-experience", "burnout", "engagement"]
+    },
+    {
+      "item_id": "DORA-SPACE-P",
+      "title": "SPACE: Performance",
+      "domain": "sdlc",
+      "category": "space-framework",
+      "description": "Measures the outcome or impact of developer work, not just the output. Focuses on quality of code, reliability of services, customer impact, and whether the work achieves its intended business objectives. Avoids simplistic output metrics.",
+      "purpose": "Assess the outcome and impact of developer work on business objectives.",
+      "kpis": ["Customer impact metrics", "Code quality indicators", "Business outcome achievement", "Feature adoption rate"],
+      "tags": ["performance", "outcomes", "impact", "quality", "business-value"]
+    },
+    {
+      "item_id": "DORA-SPACE-A",
+      "title": "SPACE: Activity",
+      "domain": "sdlc",
+      "category": "space-framework",
+      "description": "Measures the count of actions or outputs completed in a given time period. Includes design documents, pull requests, commits, code reviews, deployments, and on-call activities. Should never be used in isolation as it does not measure productivity directly.",
+      "purpose": "Track developer activity volume as one input to productivity assessment.",
+      "kpis": ["Pull requests per week", "Code review turnaround time", "Commits per developer", "Deployments per team"],
+      "tags": ["activity", "output", "throughput", "volume", "developer-metrics"]
+    },
+    {
+      "item_id": "DORA-SPACE-C",
+      "title": "SPACE: Communication and collaboration",
+      "domain": "sdlc",
+      "category": "space-framework",
+      "description": "Measures how people and teams communicate and work together. Covers discoverability of information, quality of documentation, code review participation, knowledge sharing, and effectiveness of team interactions.",
+      "purpose": "Assess the quality of team communication and collaboration practices.",
+      "kpis": ["Code review participation rate", "Documentation freshness", "Knowledge sharing score", "Cross-team collaboration frequency"],
+      "tags": ["communication", "collaboration", "teamwork", "knowledge-sharing", "culture"]
+    },
+    {
+      "item_id": "DORA-SPACE-E",
+      "title": "SPACE: Efficiency and flow",
+      "domain": "sdlc",
+      "category": "space-framework",
+      "description": "Measures the ability to complete work with minimal interruptions or delays, whether as individuals or through a system. Covers flow state time, context switching, wait times, and process bottlenecks that impede developer productivity.",
+      "purpose": "Assess the efficiency and flow of developer work processes.",
+      "kpis": ["Flow state hours per day", "Context switch frequency", "Wait time in pipeline", "Handoff count per feature"],
+      "tags": ["efficiency", "flow", "developer-experience", "bottlenecks", "waste"]
+    },
+    {
+      "item_id": "DORA-CAP-TECH",
+      "title": "Technical capabilities",
+      "domain": "sdlc",
+      "category": "capability",
+      "description": "Foundational technical capabilities that drive software delivery performance. Includes version control, continuous integration, trunk-based development, continuous delivery, loosely coupled architecture, empowered teams, and test automation.",
+      "purpose": "Identify and develop technical capabilities that drive delivery performance.",
+      "kpis": ["CI pipeline maturity", "Test automation coverage", "Architecture coupling score", "Trunk-based development adoption"],
+      "tags": ["technical", "ci-cd", "automation", "architecture", "engineering-practices"]
+    },
+    {
+      "item_id": "DORA-CAP-PROC",
+      "title": "Process capabilities",
+      "domain": "sdlc",
+      "category": "capability",
+      "description": "Process and management capabilities that support delivery performance. Includes working in small batches, gathering and implementing customer feedback, team experimentation, streamlining change approval, and visibility of work in the value stream.",
+      "purpose": "Develop process capabilities that enable fast and reliable delivery.",
+      "kpis": ["Batch size trend", "Customer feedback cycle time", "Experiment frequency", "Change approval lead time"],
+      "tags": ["process", "lean", "agile", "small-batches", "feedback-loops"]
+    },
+    {
+      "item_id": "DORA-CAP-CULT",
+      "title": "Cultural capabilities",
+      "domain": "sdlc",
+      "category": "capability",
+      "description": "Cultural capabilities that correlate with high performance. Includes generative organizational culture (Westrum typology), psychological safety, learning from failures, encouraging innovation, and blameless postmortems.",
+      "purpose": "Foster a generative culture that enables high software delivery performance.",
+      "kpis": ["Westrum culture survey score", "Blameless postmortem adoption", "Innovation time allocation", "Learning culture index"],
+      "tags": ["culture", "westrum", "psychological-safety", "learning", "blameless"]
+    },
+    {
+      "item_id": "DORA-BENCHM-CLUST",
+      "title": "Performance cluster benchmarking",
+      "domain": "sdlc",
+      "category": "benchmarking",
+      "description": "Organizations are classified into performance clusters (elite, high, medium, low) based on their DORA metrics. These clusters enable benchmarking against industry peers. Research shows elite performers significantly outperform low performers across all four key metrics simultaneously.",
+      "purpose": "Benchmark organizational performance against industry clusters.",
+      "kpis": ["Current cluster classification", "Year-over-year cluster movement", "Metrics vs cluster thresholds", "Industry-specific benchmarks"],
+      "tags": ["benchmarking", "clusters", "performance-tiers", "comparison"]
+    },
+    {
+      "item_id": "DORA-IMPL-TRANS",
+      "title": "Transformation practices",
+      "domain": "sdlc",
+      "category": "implementation",
+      "description": "Practices for improving DORA metrics including starting with measurement, focusing on capabilities not tools, empowering teams, creating psychological safety, investing in automation, and treating improvement as a continuous journey rather than a destination.",
+      "purpose": "Guide organizational transformation to improve software delivery performance.",
+      "kpis": ["Transformation initiative count", "Capability improvement rate", "Team autonomy score", "Automation investment trend"],
+      "tags": ["transformation", "improvement", "practices", "devops-adoption"]
+    }
+  ]
+}

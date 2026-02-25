@@ -1,0 +1,263 @@
+{
+  "id": "cmmi",
+  "name": "CMMI v2.0",
+  "version": "2.0",
+  "authority": "ISACA (CMMI Institute)",
+  "domain": "sdlc",
+  "description": "Capability Maturity Model Integration v2.0 is a process improvement framework providing organizations with the essential elements of effective processes. It covers 20 practice areas organized across capability areas (Doing, Managing, Enabling, Improving) with 5 maturity levels for organizational assessment.",
+  "url": "https://cmmiinstitute.com/cmmi",
+  "license_note": "Metadata only. No ISACA/CMMI Institute copyrighted text reproduced. Practice area descriptions are original summaries.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "CMMI-REQD",
+      "title": "Requirements Development and Management",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Elicits, analyzes, and establishes customer, product, and product-component requirements. Ensures requirements are managed throughout the project lifecycle including traceability, impact analysis, and change control. Covers both functional and non-functional requirements.",
+      "purpose": "Produce and analyze requirements and ensure alignment between work products and requirements.",
+      "kpis": ["Requirements volatility rate", "Requirements traceability coverage", "Requirements review defect density", "Customer requirements satisfaction"],
+      "tags": ["requirements", "elicitation", "analysis", "traceability", "change-control"]
+    },
+    {
+      "item_id": "CMMI-TS",
+      "title": "Technical Solution",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Develops, designs, and implements solutions to requirements. Covers selecting product-component solutions, developing detailed designs, and implementing the designs as product components. Includes make-or-buy decisions and technology selection.",
+      "purpose": "Design, develop, and implement solutions to requirements.",
+      "kpis": ["Design review coverage", "Implementation defect density", "Reuse percentage", "Technical debt ratio"],
+      "tags": ["design", "implementation", "solution", "architecture", "development"]
+    },
+    {
+      "item_id": "CMMI-PI",
+      "title": "Product Integration",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Assembles the product from product components, ensures that the integrated product functions properly, and delivers the product. Covers integration planning, interface management, and progressive assembly and testing of product components.",
+      "purpose": "Assemble product components and ensure the integrated product functions correctly.",
+      "kpis": ["Integration test pass rate", "Interface defect count", "Integration build success rate", "Time to integrate"],
+      "tags": ["integration", "assembly", "interface-management", "product-build"]
+    },
+    {
+      "item_id": "CMMI-VV",
+      "title": "Verification and Validation",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Ensures that selected work products meet specified requirements (verification) and that the product fulfills its intended use when placed in its intended environment (validation). Covers peer reviews, testing, and acceptance activities.",
+      "purpose": "Ensure products meet requirements and fulfill their intended purpose.",
+      "kpis": ["Test coverage percentage", "Defect detection rate", "Peer review effectiveness", "Validation pass rate"],
+      "tags": ["verification", "validation", "testing", "peer-review", "quality"]
+    },
+    {
+      "item_id": "CMMI-PR",
+      "title": "Peer Reviews",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Identifies and removes defects early in work products through structured reviews by peers. Covers code reviews, design reviews, document reviews, and other forms of peer examination to improve quality and share knowledge.",
+      "purpose": "Identify and remove defects early through structured peer examination.",
+      "kpis": ["Review coverage rate", "Defects found per review hour", "Review participation rate", "Post-review defect leakage"],
+      "tags": ["peer-review", "code-review", "inspection", "walkthrough", "quality"]
+    },
+    {
+      "item_id": "CMMI-ENS",
+      "title": "Ensuring Quality",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Provides staff and management with objective insight into processes and associated work products. Evaluates processes and work products against applicable process descriptions, standards, and procedures. Addresses noncompliance issues.",
+      "purpose": "Provide objective quality assurance of processes and work products.",
+      "kpis": ["Audit finding count", "Noncompliance resolution time", "Process compliance rate", "Audit coverage"],
+      "tags": ["quality-assurance", "process-compliance", "audit", "noncompliance"]
+    },
+    {
+      "item_id": "CMMI-STS",
+      "title": "Managing Security and Safety",
+      "domain": "sdlc",
+      "category": "doing",
+      "description": "Manages security and safety threats to the development environment, the system being built, and the system in operation. Covers security and safety requirements, risk assessment, and mitigation planning for both product and process.",
+      "purpose": "Manage security and safety threats throughout the product lifecycle.",
+      "kpis": ["Security vulnerability count", "Safety hazard mitigation rate", "Security test coverage", "Incident response time"],
+      "tags": ["security", "safety", "threat-management", "risk-mitigation"]
+    },
+    {
+      "item_id": "CMMI-CM",
+      "title": "Configuration Management",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Establishes and maintains the integrity of work products using configuration identification, configuration control, configuration status accounting, and configuration audits. Manages baselines and tracks changes.",
+      "purpose": "Establish and maintain integrity of work products through configuration control.",
+      "kpis": ["Baseline compliance rate", "Unauthorized change count", "Configuration audit pass rate", "Change request cycle time"],
+      "tags": ["configuration-management", "baselines", "change-control", "version-control"]
+    },
+    {
+      "item_id": "CMMI-PLAN",
+      "title": "Planning",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Establishes and maintains plans that define project activities. Develops the project plan including work breakdown structure, effort and cost estimates, schedule, resource allocation, and risk identification.",
+      "purpose": "Establish and maintain project plans that define activities and guide execution.",
+      "kpis": ["Plan accuracy vs actuals", "Estimation accuracy", "Schedule adherence", "Plan update frequency"],
+      "tags": ["planning", "estimation", "scheduling", "work-breakdown", "project-plan"]
+    },
+    {
+      "item_id": "CMMI-MC",
+      "title": "Monitor and Control",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Provides understanding of project progress so that appropriate corrective actions can be taken when the project's performance deviates significantly from the plan. Covers tracking milestones, resources, risks, and commitments.",
+      "purpose": "Monitor project progress and take corrective actions when needed.",
+      "kpis": ["Milestone adherence rate", "Earned value metrics (CPI/SPI)", "Issue resolution time", "Risk mitigation effectiveness"],
+      "tags": ["monitoring", "control", "progress-tracking", "corrective-action", "earned-value"]
+    },
+    {
+      "item_id": "CMMI-EST",
+      "title": "Estimating",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Develops estimates of work product and task attributes. Covers size estimation, effort estimation, schedule estimation, and cost estimation using appropriate methods such as analogy, parametric models, or expert judgment.",
+      "purpose": "Develop reliable estimates for size, effort, schedule, and cost.",
+      "kpis": ["Estimation accuracy percentage", "Variance from estimates", "Estimation method consistency", "Historical data utilization"],
+      "tags": ["estimation", "sizing", "effort", "cost", "forecasting"]
+    },
+    {
+      "item_id": "CMMI-MPM",
+      "title": "Managing Performance and Measurement",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Uses measurement and analysis to manage performance against objectives. Establishes measurement objectives, specifies measures, collects data, and analyzes results to support decision making and process improvement.",
+      "purpose": "Manage performance through measurement, analysis, and data-driven decision making.",
+      "kpis": ["Measurement objective achievement", "Data collection completeness", "Analysis report timeliness", "Metric-driven decisions count"],
+      "tags": ["measurement", "performance-management", "metrics", "analysis", "data-driven"]
+    },
+    {
+      "item_id": "CMMI-PCM",
+      "title": "Process Management",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Establishes and maintains a usable set of organizational process assets and work environment standards. Deploys organizational processes, collects process-related experiences, and improves organizational processes.",
+      "purpose": "Manage organizational processes and process assets for consistent execution.",
+      "kpis": ["Process compliance rate", "Process asset utilization", "Process improvement proposals implemented", "Process definition coverage"],
+      "tags": ["process-management", "process-assets", "standardization", "deployment"]
+    },
+    {
+      "item_id": "CMMI-RSK",
+      "title": "Risk and Opportunity Management",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Identifies potential problems before they occur so that risk-handling activities can be planned and invoked as needed. Also identifies opportunities that can be pursued. Covers risk identification, analysis, prioritization, and mitigation planning.",
+      "purpose": "Identify and manage risks and opportunities proactively.",
+      "kpis": ["Risk identification rate", "Risk mitigation plan completion", "Risks materialized vs identified", "Opportunities captured"],
+      "tags": ["risk", "opportunity", "mitigation", "risk-register", "contingency"]
+    },
+    {
+      "item_id": "CMMI-WPM",
+      "title": "Work Planning and Management",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Plans, monitors, and controls the work. Integrates planning and monitoring across all activities to provide a coherent, managed approach to work execution. Addresses resource allocation and workload balancing.",
+      "purpose": "Plan and manage work execution across all project activities.",
+      "kpis": ["Work item completion rate", "Resource allocation efficiency", "Workload balance index", "Delivery predictability"],
+      "tags": ["work-management", "planning", "resource-allocation", "execution"]
+    },
+    {
+      "item_id": "CMMI-SAM",
+      "title": "Supplier Agreement Management",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Manages the acquisition of products and services from suppliers. Covers supplier selection, agreement establishment, supplier performance monitoring, and acceptance of supplier deliverables.",
+      "purpose": "Manage supplier agreements and ensure supplier delivery meets requirements.",
+      "kpis": ["Supplier delivery on-time rate", "Supplier quality score", "Agreement compliance rate", "Supplier issue resolution time"],
+      "tags": ["supplier", "procurement", "agreement", "vendor-management", "outsourcing"]
+    },
+    {
+      "item_id": "CMMI-COMP",
+      "title": "Compliance",
+      "domain": "sdlc",
+      "category": "managing",
+      "description": "Identifies applicable compliance requirements (regulatory, legal, contractual, and organizational) and ensures that processes and work products comply with those requirements. Addresses compliance tracking and reporting.",
+      "purpose": "Ensure compliance with applicable regulatory, legal, and organizational requirements.",
+      "kpis": ["Compliance requirement coverage", "Compliance finding count", "Compliance audit results", "Regulatory change response time"],
+      "tags": ["compliance", "regulatory", "legal", "contractual", "audit"]
+    },
+    {
+      "item_id": "CMMI-CAR",
+      "title": "Causal Analysis and Resolution",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Identifies causes of selected outcomes and takes action to improve process performance. Uses root cause analysis techniques to identify and address the causes of defects, performance problems, and other outcomes that do not meet objectives.",
+      "purpose": "Identify root causes of outcomes and take action to improve performance.",
+      "kpis": ["Root cause analysis completion rate", "Recurring defect reduction", "Process improvement actions completed", "Performance trend improvement"],
+      "tags": ["causal-analysis", "root-cause", "problem-solving", "process-improvement"]
+    },
+    {
+      "item_id": "CMMI-DAR",
+      "title": "Decision Analysis and Resolution",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Analyzes possible decisions using a formal evaluation process that evaluates identified alternatives against established criteria. Provides a structured approach to significant decisions to reduce subjective bias.",
+      "purpose": "Apply structured decision-making to significant choices using formal evaluation.",
+      "kpis": ["Formal decision analysis usage rate", "Decision reversal frequency", "Criteria coverage completeness", "Decision documentation rate"],
+      "tags": ["decision-analysis", "trade-study", "evaluation", "criteria", "alternatives"]
+    },
+    {
+      "item_id": "CMMI-GOV",
+      "title": "Governance",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Provides sponsorship, oversight, and governance mechanisms for the organization's process improvement and performance activities. Establishes and maintains governance structures, policies, and oversight mechanisms.",
+      "purpose": "Provide governance and oversight for organizational process improvement.",
+      "kpis": ["Governance review frequency", "Policy compliance rate", "Escalation resolution time", "Sponsorship engagement level"],
+      "tags": ["governance", "oversight", "sponsorship", "policy", "accountability"]
+    },
+    {
+      "item_id": "CMMI-II",
+      "title": "Implementation Infrastructure",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Establishes and maintains the infrastructure needed to implement and institutionalize processes. Covers tools, methods, training, and organizational support structures required for consistent process execution.",
+      "purpose": "Establish infrastructure to support consistent process implementation.",
+      "kpis": ["Tool adoption rate", "Infrastructure availability", "Training coverage", "Support request resolution time"],
+      "tags": ["infrastructure", "tools", "training", "institutionalization", "support"]
+    },
+    {
+      "item_id": "CMMI-OPF",
+      "title": "Organizational Process Focus",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Plans, implements, and deploys organizational process improvements based on a thorough understanding of current strengths and weaknesses of the organization's processes and process assets.",
+      "purpose": "Plan and implement organizational process improvements.",
+      "kpis": ["Process improvement plan completion", "Improvement deployment rate", "Process appraisal findings addressed", "Organizational maturity trend"],
+      "tags": ["process-focus", "process-improvement", "appraisal", "deployment"]
+    },
+    {
+      "item_id": "CMMI-OPP",
+      "title": "Organizational Process Performance",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Establishes and maintains a quantitative understanding of the performance of selected processes in the organization's set of standard processes. Uses statistical and quantitative techniques to manage process performance.",
+      "purpose": "Establish quantitative understanding of organizational process performance.",
+      "kpis": ["Process performance baseline accuracy", "Statistical process control adoption", "Performance model accuracy", "Process capability index"],
+      "tags": ["process-performance", "quantitative", "statistical", "baselines", "capability"]
+    },
+    {
+      "item_id": "CMMI-OT",
+      "title": "Organizational Training",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Develops the skills and knowledge of people so they can perform their roles effectively and efficiently. Identifies training needs, develops or acquires training, delivers training, and evaluates training effectiveness.",
+      "purpose": "Develop skills and knowledge through systematic organizational training.",
+      "kpis": ["Training completion rate", "Training effectiveness score", "Skill gap reduction", "Training hours per person"],
+      "tags": ["training", "skills-development", "competency", "learning", "education"]
+    },
+    {
+      "item_id": "CMMI-OPD",
+      "title": "Organizational Process Definition",
+      "domain": "sdlc",
+      "category": "enabling",
+      "description": "Establishes and maintains a usable set of organizational process assets including the organization's set of standard processes and work environment standards. Provides the foundation for consistent process execution.",
+      "purpose": "Define and maintain organizational standard processes and process assets.",
+      "kpis": ["Process asset completeness", "Process tailoring guideline usage", "Standard process adoption rate", "Process asset update frequency"],
+      "tags": ["process-definition", "standard-processes", "process-assets", "tailoring"]
+    }
+  ]
+}
