@@ -1,0 +1,70 @@
+[
+  {
+    "framework_id": "itil4",
+    "levels": [
+      {
+        "level": 1,
+        "level_name": "Initial",
+        "description": "The practice is ad-hoc and unstructured. Activities may be performed but without consistent procedures, documentation, or management oversight. Success depends on individual effort rather than organizational capability.",
+        "characteristics": [
+          "Ad-hoc practice execution",
+          "No formal documentation",
+          "Reactive rather than planned approach",
+          "Results are inconsistent and unpredictable",
+          "Individual heroics drive outcomes"
+        ]
+      },
+      {
+        "level": 2,
+        "level_name": "Repeatable",
+        "description": "Basic procedures are established and followed for the practice. Activities are repeatable because knowledge exists within teams, though it may not be formally documented across the organization.",
+        "characteristics": [
+          "Basic procedures exist and are followed",
+          "Practice is repeatable within teams",
+          "Some documentation is maintained",
+          "Management provides basic oversight",
+          "Resources are assigned to the practice"
+        ]
+      },
+      {
+        "level": 3,
+        "level_name": "Defined",
+        "description": "The practice is formally defined, documented, and standardized across the organization. Roles and responsibilities are clear. Training is provided and the practice is consistently applied.",
+        "characteristics": [
+          "Practice is formally documented and standardized",
+          "Roles and responsibilities are clearly defined",
+          "Training is provided to practitioners",
+          "Consistent application across the organization",
+          "Process outputs are defined and measured",
+          "Interfaces with other practices are documented"
+        ]
+      },
+      {
+        "level": 4,
+        "level_name": "Managed",
+        "description": "The practice is measured and managed using quantitative objectives. Performance is predictable and variations are understood. Data-driven decisions guide practice improvements.",
+        "characteristics": [
+          "Quantitative objectives are defined for the practice",
+          "Performance metrics are collected and analyzed",
+          "Practice performance is predictable",
+          "Data-driven decisions guide improvements",
+          "Trends are monitored and acted upon",
+          "Practice effectiveness is regularly reviewed"
+        ]
+      },
+      {
+        "level": 5,
+        "level_name": "Optimizing",
+        "description": "The practice is continuously improved based on quantitative performance data and alignment with business objectives. Innovation is actively pursued and the practice is considered best-in-class.",
+        "characteristics": [
+          "Continuous improvement is embedded",
+          "Innovation is actively pursued",
+          "Practice performance is optimized",
+          "Best practices are shared and adopted",
+          "Improvement is proactive and data-driven",
+          "The practice is benchmarked against industry leaders"
+        ]
+      }
+    ]
+  }
+]

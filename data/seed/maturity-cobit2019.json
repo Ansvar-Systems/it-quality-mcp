@@ -1,0 +1,82 @@
+[
+  {
+    "framework_id": "cobit2019",
+    "levels": [
+      {
+        "level": 0,
+        "level_name": "Incomplete",
+        "description": "The process is not implemented or fails to achieve its purpose. There is little or no evidence of any systematic achievement of the process purpose.",
+        "characteristics": [
+          "Process does not exist or is not implemented",
+          "No evidence of consistent process outcomes",
+          "Objectives are not being achieved",
+          "Process activities may be performed sporadically"
+        ]
+      },
+      {
+        "level": 1,
+        "level_name": "Performed",
+        "description": "The implemented process achieves its process purpose. Basic practices are performed and work products are produced, but there may not be rigorous planning and tracking.",
+        "characteristics": [
+          "Process purpose is being achieved",
+          "Basic practices are performed",
+          "Work products exist but may not be controlled",
+          "Performance is dependent on individual knowledge",
+          "Informal approaches may be used"
+        ]
+      },
+      {
+        "level": 2,
+        "level_name": "Managed",
+        "description": "The process is implemented in a managed fashion (planned, monitored, and adjusted) and its work products are appropriately established, controlled, and maintained.",
+        "characteristics": [
+          "Process is planned and tracked",
+          "Work products are identified and controlled",
+          "Performance is managed against defined objectives",
+          "Responsibilities are assigned and communicated",
+          "Adequate resources and information are provided",
+          "Stakeholder needs are identified and managed"
+        ]
+      },
+      {
+        "level": 3,
+        "level_name": "Established",
+        "description": "The managed process is implemented using a defined process that is capable of achieving its process outcomes. Standard processes exist and are used as the basis for process implementations.",
+        "characteristics": [
+          "Standard process is defined and documented",
+          "Process is deployed based on organizational standards",
+          "Process interactions and dependencies are defined",
+          "Competency requirements are identified",
+          "Infrastructure requirements are identified",
+          "Process data is collected for analysis"
+        ]
+      },
+      {
+        "level": 4,
+        "level_name": "Predictable",
+        "description": "The established process operates within defined limits to achieve its process outcomes. Quantitative management needs are identified, measurement data is collected and analyzed to identify assignable causes of variation.",
+        "characteristics": [
+          "Quantitative process objectives are defined",
+          "Measurement data is systematically collected",
+          "Statistical techniques are applied to manage performance",
+          "Process performance is predictable",
+          "Special causes of variation are identified and corrected",
+          "Process outcomes meet quantitative quality objectives"
+        ]
+      },
+      {
+        "level": 5,
+        "level_name": "Optimizing",
+        "description": "The predictable process is continually improved to meet relevant current and projected business goals. Improvement objectives are defined, quantified, and implemented.",
+        "characteristics": [
+          "Process improvement is driven by quantitative analysis",
+          "Innovation opportunities are systematically identified",
+          "Impact of proposed changes is assessed quantitatively",
+          "Implementation of improvements is managed",
+          "Improvement effectiveness is evaluated",
+          "Continuous optimization is embedded in culture"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "framework_id": "cmmi",
+    "levels": [
+      {
+        "level": 0,
+        "level_name": "Incomplete",
+        "description": "Work may or may not get completed. Processes are either not performed or only partially performed. No goals are satisfied consistently.",
+        "characteristics": [
+          "Ad-hoc and chaotic approach to work",
+          "No consistent process followed",
+          "Success depends on individual effort",
+          "Little or no documentation of processes",
+          "Outcomes are unpredictable"
+        ]
+      },
+      {
+        "level": 1,
+        "level_name": "Initial",
+        "description": "Work gets completed but is often delayed and over budget. Processes are reactive and unpredictable. Performance depends on the competence and heroics of people rather than proven processes.",
+        "characteristics": [
+          "Processes are ad-hoc and often reactive",
+          "Work is completed through individual heroics",
+          "Success not consistently repeatable",
+          "Schedule and budget overruns are common",
+          "Quality is unpredictable"
+        ]
+      },
+      {
+        "level": 2,
+        "level_name": "Managed",
+        "description": "Projects are planned, performed, measured, and controlled at the project level. Existing processes are retained during times of stress. Commitments are managed and work products are controlled.",
+        "characteristics": [
+          "Requirements are managed",
+          "Projects are planned and executed according to policy",
+          "Work products are managed and controlled",
+          "Relevant stakeholders are involved",
+          "Processes are monitored and corrective actions taken",
+          "Status is visible to management at defined points"
+        ]
+      },
+      {
+        "level": 3,
+        "level_name": "Defined",
+        "description": "Processes are well characterized, understood, and described in standards, procedures, tools, and methods. The organization's set of standard processes is established and improved over time. Projects establish their defined processes by tailoring the organization's standard processes.",
+        "characteristics": [
+          "Standard processes are documented and maintained",
+          "Projects tailor from organizational standards",
+          "Processes are proactively managed",
+          "Process performance data is collected and analyzed",
+          "Training programmes support process deployment",
+          "Process assets are maintained and shared"
+        ]
+      },
+      {
+        "level": 4,
+        "level_name": "Quantitatively Managed",
+        "description": "The organization and projects establish quantitative objectives for quality and process performance and use them as criteria for managing processes. Quantitative objectives are based on the needs of the customer, end users, organization, and process implementers.",
+        "characteristics": [
+          "Quantitative quality and performance objectives are established",
+          "Statistical and quantitative techniques are used",
+          "Process performance baselines and models are maintained",
+          "Variation in process performance is understood and managed",
+          "Special causes of variation are identified and addressed",
+          "Outcomes are predictable based on statistical analysis"
+        ]
+      },
+      {
+        "level": 5,
+        "level_name": "Optimizing",
+        "description": "The organization continually improves its processes based on a quantitative understanding of its business objectives and performance needs. The focus is on continually improving process performance through incremental and innovative improvements.",
+        "characteristics": [
+          "Continuous process improvement is embedded in culture",
+          "Innovation and technology transfer are pursued",
+          "Root causes of defects are systematically identified and resolved",
+          "Improvement is driven by quantitative analysis",
+          "Lessons learned are deployed across the organization",
+          "Process performance is predictable and optimized"
+        ]
+      }
+    ]
+  }
+]
