@@ -1,0 +1,403 @@
+{
+  "id": "iso25010",
+  "name": "ISO/IEC 25010 SQuaRE",
+  "version": "2011",
+  "authority": "ISO/IEC",
+  "domain": "quality",
+  "description": "Systems and software quality requirements and evaluation model. Defines 8 quality characteristics and 31 sub-characteristics for software product quality, providing a comprehensive framework for specifying and evaluating software quality.",
+  "url": "https://www.iso.org/standard/35733.html",
+  "license_note": "Metadata only. No ISO copyrighted text reproduced. Descriptions are original summaries of publicly known quality characteristics.",
+  "last_reviewed": "2026-02-25",
+  "items": [
+    {
+      "item_id": "ISO25010-FUNC",
+      "title": "Functional suitability",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree to which a product or system provides functions that meet stated and implied needs when used under specified conditions. Covers whether the software does what it is supposed to do, with the right results, covering the intended tasks and user objectives.",
+      "purpose": "Evaluate whether the system provides appropriate functions that meet user and stakeholder needs.",
+      "tags": ["functional", "suitability", "requirements", "fitness-for-purpose"],
+      "kpis": ["Functional coverage percentage", "Requirements traceability completeness", "Functional test pass rate"]
+    },
+    {
+      "item_id": "ISO25010-FUNC-COMP",
+      "title": "Functional completeness",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the set of functions covers all the specified tasks and user objectives. Measures whether all required functions are present and nothing important is missing from the implementation.",
+      "purpose": "Assess the coverage of specified tasks and user objectives by the implemented functions.",
+      "tags": ["completeness", "coverage", "requirements"],
+      "related_items": ["ISO25010-FUNC"]
+    },
+    {
+      "item_id": "ISO25010-FUNC-CORR",
+      "title": "Functional correctness",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system provides the correct results with the needed degree of precision. Focuses on accuracy of outputs and calculations produced by the software.",
+      "purpose": "Assess whether functions produce correct results with the required precision.",
+      "tags": ["correctness", "accuracy", "precision"],
+      "related_items": ["ISO25010-FUNC"]
+    },
+    {
+      "item_id": "ISO25010-FUNC-APPR",
+      "title": "Functional appropriateness",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the functions facilitate the accomplishment of specified tasks and objectives. Evaluates whether the functions are suitable and well-designed for their intended use, not just present and correct.",
+      "purpose": "Assess whether functions facilitate task accomplishment in an appropriate manner.",
+      "tags": ["appropriateness", "usability", "task-support"],
+      "related_items": ["ISO25010-FUNC"]
+    },
+    {
+      "item_id": "ISO25010-PERF",
+      "title": "Performance efficiency",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Performance relative to the amount of resources used under stated conditions. Evaluates how well the system utilizes processing time, memory, storage, network bandwidth, and other resources to deliver its functions.",
+      "purpose": "Evaluate the system's performance relative to resource consumption.",
+      "tags": ["performance", "efficiency", "resources", "speed"],
+      "kpis": ["Response time percentiles", "Throughput rate", "Resource utilization percentage"]
+    },
+    {
+      "item_id": "ISO25010-PERF-TIME",
+      "title": "Time behaviour",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the response time and throughput rates of a product or system meet requirements when performing its functions. Covers latency, processing speed, and transaction rates.",
+      "purpose": "Assess response times and throughput rates against requirements.",
+      "tags": ["response-time", "latency", "throughput", "speed"],
+      "related_items": ["ISO25010-PERF"]
+    },
+    {
+      "item_id": "ISO25010-PERF-RES",
+      "title": "Resource utilization",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the amounts and types of resources used by a product or system meet requirements when performing its functions. Covers CPU, memory, disk, network, and other resource consumption.",
+      "purpose": "Assess resource consumption levels against requirements and expectations.",
+      "tags": ["resource-utilization", "cpu", "memory", "efficiency"],
+      "related_items": ["ISO25010-PERF"]
+    },
+    {
+      "item_id": "ISO25010-PERF-CAP",
+      "title": "Capacity",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the maximum limits of a product or system parameter meet requirements. Covers maximum number of concurrent users, transaction volumes, data storage limits, and similar capacity boundaries.",
+      "purpose": "Assess whether system capacity limits meet the specified requirements.",
+      "tags": ["capacity", "scalability", "limits", "maximum"],
+      "related_items": ["ISO25010-PERF"]
+    },
+    {
+      "item_id": "ISO25010-COMP",
+      "title": "Compatibility",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree to which a product, system, or component can exchange information with other products, systems, or components and perform its required functions while sharing the same hardware or software environment.",
+      "purpose": "Evaluate the ability to coexist and interoperate with other systems.",
+      "tags": ["compatibility", "interoperability", "coexistence", "integration"],
+      "kpis": ["Integration test pass rate", "API compatibility score", "Coexistence test results"]
+    },
+    {
+      "item_id": "ISO25010-COMP-COEX",
+      "title": "Co-existence",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product can perform its required functions efficiently while sharing a common environment and resources with other products, without detrimental impact on any other product.",
+      "purpose": "Assess the ability to share environments without adverse effects on other systems.",
+      "tags": ["co-existence", "shared-environment", "resource-sharing"],
+      "related_items": ["ISO25010-COMP"]
+    },
+    {
+      "item_id": "ISO25010-COMP-INTOP",
+      "title": "Interoperability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which two or more systems, products, or components can exchange information and use the information that has been exchanged. Covers data format compatibility, API integration, and protocol support.",
+      "purpose": "Assess the ability to exchange and use information with other systems.",
+      "tags": ["interoperability", "integration", "data-exchange", "api"],
+      "related_items": ["ISO25010-COMP"]
+    },
+    {
+      "item_id": "ISO25010-USAB",
+      "title": "Usability",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree to which a product or system can be used by specified users to achieve specified goals with effectiveness, efficiency, and satisfaction in a specified context of use. Encompasses the overall user experience quality.",
+      "purpose": "Evaluate the ease of use and user satisfaction of the system.",
+      "tags": ["usability", "user-experience", "ux", "ease-of-use"],
+      "kpis": ["Task completion rate", "User satisfaction score", "Error rate per task", "Time on task"]
+    },
+    {
+      "item_id": "ISO25010-USAB-RECOG",
+      "title": "Appropriateness recognizability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which users can recognize whether a product or system is appropriate for their needs. Measures how easily users can determine if the software will meet their requirements before committing to use it.",
+      "purpose": "Assess how easily users can determine if the system meets their needs.",
+      "tags": ["recognizability", "discoverability", "first-impression"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-USAB-LEARN",
+      "title": "Learnability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system can be used by specified users to achieve specified goals of learning to use the product with effectiveness, efficiency, freedom from risk, and satisfaction.",
+      "purpose": "Assess how easily users can learn to use the system.",
+      "tags": ["learnability", "learning-curve", "onboarding", "training"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-USAB-OPER",
+      "title": "Operability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system has attributes that make it easy to operate and control. Covers ease of navigation, clarity of controls, and intuitiveness of the user interface.",
+      "purpose": "Assess the ease of operation and control of the system.",
+      "tags": ["operability", "controls", "navigation", "intuitive"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-USAB-ERR",
+      "title": "User error protection",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system protects users against making errors. Includes input validation, confirmation dialogs, undo capabilities, and helpful error messages that guide users toward correct actions.",
+      "purpose": "Assess how well the system prevents and handles user errors.",
+      "tags": ["error-protection", "validation", "error-handling", "undo"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-USAB-AEST",
+      "title": "User interface aesthetics",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a user interface enables pleasing and satisfying interaction for the user. Covers visual design quality, layout consistency, and overall aesthetic appeal of the interface.",
+      "purpose": "Assess the visual quality and aesthetic appeal of the user interface.",
+      "tags": ["aesthetics", "ui-design", "visual-design", "look-and-feel"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-USAB-ACCESS",
+      "title": "Accessibility",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system can be used by people with the widest range of characteristics and capabilities to achieve a specified goal. Covers WCAG compliance, screen reader support, and assistive technology compatibility.",
+      "purpose": "Assess the ability of the system to be used by people with diverse abilities.",
+      "tags": ["accessibility", "wcag", "a11y", "assistive-technology", "inclusive-design"],
+      "related_items": ["ISO25010-USAB"]
+    },
+    {
+      "item_id": "ISO25010-REL",
+      "title": "Reliability",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree to which a system, product, or component performs specified functions under specified conditions for a specified period of time. Encompasses system stability, fault handling, and recovery capabilities.",
+      "purpose": "Evaluate the ability of the system to perform reliably under specified conditions.",
+      "tags": ["reliability", "stability", "fault-tolerance", "recovery"],
+      "kpis": ["MTBF", "MTTR", "Availability percentage", "Error rate"]
+    },
+    {
+      "item_id": "ISO25010-REL-MAT",
+      "title": "Maturity",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system, product, or component meets needs for reliability under normal operation. Measures the frequency of failures and the system's ability to maintain consistent behavior over time.",
+      "purpose": "Assess reliability under normal operating conditions.",
+      "tags": ["maturity", "stability", "failure-rate"],
+      "related_items": ["ISO25010-REL"]
+    },
+    {
+      "item_id": "ISO25010-REL-AVAIL",
+      "title": "Availability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system, product, or component is operational and accessible when required for use. Typically measured as uptime percentage over a defined period.",
+      "purpose": "Assess the operational availability of the system when needed.",
+      "tags": ["availability", "uptime", "operational"],
+      "related_items": ["ISO25010-REL"]
+    },
+    {
+      "item_id": "ISO25010-REL-FAULT",
+      "title": "Fault tolerance",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system, product, or component operates as intended despite the presence of hardware or software faults. Covers graceful degradation and the ability to continue operating when components fail.",
+      "purpose": "Assess the ability to operate despite hardware or software faults.",
+      "tags": ["fault-tolerance", "graceful-degradation", "resilience"],
+      "related_items": ["ISO25010-REL"]
+    },
+    {
+      "item_id": "ISO25010-REL-RECOV",
+      "title": "Recoverability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system can recover data and re-establish the desired state after an interruption or failure. Covers backup and restore capabilities, failover mechanisms, and recovery procedures.",
+      "purpose": "Assess the ability to recover data and state after an interruption or failure.",
+      "tags": ["recoverability", "recovery", "backup", "restore", "failover"],
+      "related_items": ["ISO25010-REL"]
+    },
+    {
+      "item_id": "ISO25010-SEC",
+      "title": "Security",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree to which a product or system protects information and data so that persons or other products or systems have the degree of data access appropriate to their types and levels of authorization.",
+      "purpose": "Evaluate the protection of information and data from unauthorized access.",
+      "tags": ["security", "protection", "authorization", "data-security"],
+      "kpis": ["Vulnerability count", "Security test pass rate", "Access control compliance", "Penetration test findings"]
+    },
+    {
+      "item_id": "ISO25010-SEC-CONF",
+      "title": "Confidentiality",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system ensures that data is accessible only to those authorized to have access. Covers encryption, access controls, and data classification mechanisms.",
+      "purpose": "Assess the protection of data from unauthorized access.",
+      "tags": ["confidentiality", "access-control", "encryption", "data-protection"],
+      "related_items": ["ISO25010-SEC"]
+    },
+    {
+      "item_id": "ISO25010-SEC-INT",
+      "title": "Integrity",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system, product, or component prevents unauthorized access to, or modification of, computer programs or data. Covers data validation, checksums, and tamper detection.",
+      "purpose": "Assess the protection of data and programs from unauthorized modification.",
+      "tags": ["integrity", "data-integrity", "tamper-protection", "validation"],
+      "related_items": ["ISO25010-SEC"]
+    },
+    {
+      "item_id": "ISO25010-SEC-NONREP",
+      "title": "Non-repudiation",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which actions or events can be proven to have taken place so that they cannot be repudiated later. Covers audit trails, digital signatures, and transaction logging.",
+      "purpose": "Assess the ability to prove that actions or events took place.",
+      "tags": ["non-repudiation", "audit-trail", "digital-signature", "logging"],
+      "related_items": ["ISO25010-SEC"]
+    },
+    {
+      "item_id": "ISO25010-SEC-ACCT",
+      "title": "Accountability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the actions of an entity can be traced uniquely to the entity. Covers user identification, authentication, and activity logging to attribute actions to specific users or systems.",
+      "purpose": "Assess the ability to trace actions to their originating entity.",
+      "tags": ["accountability", "traceability", "authentication", "user-tracking"],
+      "related_items": ["ISO25010-SEC"]
+    },
+    {
+      "item_id": "ISO25010-SEC-AUTH",
+      "title": "Authenticity",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which the identity of a subject or resource can be proved to be the one claimed. Covers authentication mechanisms, certificate validation, and identity verification.",
+      "purpose": "Assess the ability to verify the identity of subjects and resources.",
+      "tags": ["authenticity", "authentication", "identity", "verification"],
+      "related_items": ["ISO25010-SEC"]
+    },
+    {
+      "item_id": "ISO25010-MAINT",
+      "title": "Maintainability",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree of effectiveness and efficiency with which a product or system can be modified to improve it, correct it, or adapt it to changes in environment and requirements. Encompasses code quality and architectural design for long-term maintenance.",
+      "purpose": "Evaluate the ease with which the system can be modified, corrected, or adapted.",
+      "tags": ["maintainability", "code-quality", "technical-debt", "modifiability"],
+      "kpis": ["Code complexity metrics", "Technical debt ratio", "Mean time to implement change", "Code review findings"]
+    },
+    {
+      "item_id": "ISO25010-MAINT-MOD",
+      "title": "Modularity",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a system or computer program is composed of discrete components such that a change to one component has minimal impact on other components. Enables independent modification and replacement of parts.",
+      "purpose": "Assess the degree of independent, loosely-coupled components.",
+      "tags": ["modularity", "components", "coupling", "separation-of-concerns"],
+      "related_items": ["ISO25010-MAINT"]
+    },
+    {
+      "item_id": "ISO25010-MAINT-REUS",
+      "title": "Reusability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which an asset can be used in more than one system, or in building other assets. Covers library design, API abstractions, and component packaging for reuse across projects.",
+      "purpose": "Assess the ability to reuse components or assets in other systems.",
+      "tags": ["reusability", "libraries", "components", "abstraction"],
+      "related_items": ["ISO25010-MAINT"]
+    },
+    {
+      "item_id": "ISO25010-MAINT-ANAL",
+      "title": "Analysability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree of effectiveness and efficiency with which it is possible to assess the impact on a product or system of an intended change, to diagnose a product for deficiencies or causes of failures, or to identify parts to be modified.",
+      "purpose": "Assess the ease of diagnosing issues and determining impact of changes.",
+      "tags": ["analysability", "diagnostics", "impact-analysis", "debugging"],
+      "related_items": ["ISO25010-MAINT"]
+    },
+    {
+      "item_id": "ISO25010-MAINT-MODI",
+      "title": "Modifiability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system can be effectively and efficiently modified without introducing defects or degrading existing product quality. Covers ease of code changes, configuration changes, and feature additions.",
+      "purpose": "Assess the ease of making modifications without introducing defects.",
+      "tags": ["modifiability", "changeability", "extensibility", "flexibility"],
+      "related_items": ["ISO25010-MAINT"]
+    },
+    {
+      "item_id": "ISO25010-MAINT-TEST",
+      "title": "Testability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree of effectiveness and efficiency with which test criteria can be established for a system, product, or component, and tests can be performed to determine whether those criteria have been met.",
+      "purpose": "Assess the ease of establishing test criteria and executing tests.",
+      "tags": ["testability", "testing", "test-automation", "test-coverage"],
+      "related_items": ["ISO25010-MAINT"]
+    },
+    {
+      "item_id": "ISO25010-PORT",
+      "title": "Portability",
+      "domain": "quality",
+      "category": "characteristic",
+      "description": "Degree of effectiveness and efficiency with which a system, product, or component can be transferred from one hardware, software, or other operational or usage environment to another.",
+      "purpose": "Evaluate the ability to transfer the system between different environments.",
+      "tags": ["portability", "platform-independence", "migration", "cross-platform"],
+      "kpis": ["Supported platforms count", "Migration effort (person-days)", "Platform-specific code percentage"]
+    },
+    {
+      "item_id": "ISO25010-PORT-ADAPT",
+      "title": "Adaptability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product or system can effectively and efficiently be adapted for different or evolving hardware, software, or other operational or usage environments. Covers configuration options and platform abstraction.",
+      "purpose": "Assess the ability to adapt to different environments without modification.",
+      "tags": ["adaptability", "configuration", "platform-abstraction", "environment"],
+      "related_items": ["ISO25010-PORT"]
+    },
+    {
+      "item_id": "ISO25010-PORT-INST",
+      "title": "Installability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree of effectiveness and efficiency with which a product or system can be successfully installed or uninstalled in a specified environment. Covers installation automation, prerequisites checking, and deployment packaging.",
+      "purpose": "Assess the ease of installing and uninstalling the system.",
+      "tags": ["installability", "deployment", "packaging", "setup"],
+      "related_items": ["ISO25010-PORT"]
+    },
+    {
+      "item_id": "ISO25010-PORT-REPL",
+      "title": "Replaceability",
+      "domain": "quality",
+      "category": "sub-characteristic",
+      "description": "Degree to which a product can replace another specified software product for the same purpose in the same environment. Covers backward compatibility, data migration support, and interface compatibility.",
+      "purpose": "Assess the ability to replace another product in the same environment.",
+      "tags": ["replaceability", "backward-compatibility", "migration", "substitution"],
+      "related_items": ["ISO25010-PORT"]
+    }
+  ]
+}
