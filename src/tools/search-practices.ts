@@ -3,6 +3,7 @@ import type { Database } from '@ansvar/mcp-sqlite';
 import { MAX_QUERY_LENGTH, type Domain, type FrameworkId } from '../constants.js';
 import { buildFtsQueryVariants } from '../utils/fts-query.js';
 import { responseMeta } from '../utils/response-meta.js';
+import { buildCitation } from '../citation-universal.js';
 
 export interface SearchPracticesInput {
   query: string;
@@ -146,5 +147,14 @@ export async function searchPractices(
     results = runLikeFallback(db, query.trim(), input.domain, input.framework, limit);
   }
 
-  return { results, ...responseMeta(db) };
+  const _citations = results.map((r) =>
+    buildCitation(
+      `${r.framework_id} ${r.item_id}`,
+      `${r.title} (${r.framework_id})`,
+      'get_practice',
+      { item_id: r.item_id },
+    ),
+  );
+
+  return { results, _citations, ...responseMeta(db) };
 }

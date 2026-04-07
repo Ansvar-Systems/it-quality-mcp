@@ -2,6 +2,7 @@ import type { Database } from '@ansvar/mcp-sqlite';
 
 import type { Domain } from '../constants.js';
 import { responseMeta } from '../utils/response-meta.js';
+import { buildCitation } from '../citation-universal.js';
 
 export interface SearchByDomainInput {
   domain: Domain;
@@ -46,5 +47,15 @@ export async function searchByDomain(
   params.push(limit);
 
   const rows = db.prepare(sql).all(...params) as DomainItemResult[];
-  return { results: rows, ...responseMeta(db) };
+
+  const _citations = rows.map((r) =>
+    buildCitation(
+      `${r.framework_id} ${r.item_id}`,
+      `${r.title} (${r.framework_id})`,
+      'get_practice',
+      { item_id: r.item_id },
+    ),
+  );
+
+  return { results: rows, _citations, ...responseMeta(db) };
 }
