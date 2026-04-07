@@ -1,6 +1,7 @@
 import type { Database } from '@ansvar/mcp-sqlite';
 
 import { responseMeta } from '../utils/response-meta.js';
+import { buildCitation } from '../citation-universal.js';
 
 export interface GetFrameworkInput {
   framework_id: string;
@@ -51,8 +52,17 @@ export async function getFramework(
     };
   }
 
+  const _citation = buildCitation(
+    row.id,
+    `${row.name} ${row.version}`,
+    'get_framework',
+    { framework_id: fid },
+    row.url || undefined,
+  );
+
   const result: Record<string, unknown> = {
     ...row,
+    _citation,
     ...responseMeta(db),
   };
 

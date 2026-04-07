@@ -1,6 +1,7 @@
 import type { Database } from '@ansvar/mcp-sqlite';
 
 import { responseMeta } from '../utils/response-meta.js';
+import { buildCitation } from '../citation-universal.js';
 
 export interface GetProcessDesignInput {
   item_id: string;
@@ -120,6 +121,13 @@ export async function getProcessDesign(
       notes: m.notes,
     }));
 
+  const _citation = buildCitation(
+    `${row.framework_id} ${row.item_id}`,
+    `${row.title} (${row.framework_id})`,
+    'get_practice',
+    { item_id: row.item_id },
+  );
+
   return {
     process: {
       item_id: row.item_id,
@@ -146,6 +154,7 @@ export async function getProcessDesign(
       standard: row.source_standard || undefined,
       clause: row.source_clause || undefined,
     },
+    _citation,
     ...responseMeta(db),
   };
 }

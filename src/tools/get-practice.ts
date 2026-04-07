@@ -1,6 +1,7 @@
 import type { Database } from '@ansvar/mcp-sqlite';
 
 import { responseMeta } from '../utils/response-meta.js';
+import { buildCitation } from '../citation-universal.js';
 
 export interface GetPracticeInput {
   item_id: string;
@@ -76,6 +77,13 @@ export async function getPractice(
     'SELECT * FROM mappings WHERE source_item_id = ?',
   ).all(row.item_id) as MappingRow[];
 
+  const _citation = buildCitation(
+    `${row.framework_id} ${row.item_id}`,
+    `${row.title} (${row.framework_id})`,
+    'get_practice',
+    { item_id: row.item_id },
+  );
+
   return {
     item_id: row.item_id,
     title: row.title,
@@ -103,6 +111,7 @@ export async function getPractice(
       confidence: m.confidence,
       notes: m.notes,
     })),
+    _citation,
     ...responseMeta(db),
   };
 }
