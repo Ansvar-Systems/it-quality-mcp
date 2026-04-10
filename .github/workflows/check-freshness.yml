@@ -1,0 +1,81 @@
+name: Check Data Freshness
+
+on:
+  schedule:
+    # Run on the 1st of every month at 08:00 UTC
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: check-freshness
+  cancel-in-progress: false
+
+jobs:
+  check-freshness:
+    name: Check framework data freshness
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Rebuild database from seed
+        run: node scripts/build-db.js
+
+      - name: Check data freshness (exit non-zero if any OVERDUE)
+        run: |
+          node -e "
+          const Database = require('@ansvar/mcp-sqlite');
+          const path = require('path');
+          const db = new Database(path.join(__dirname, 'data', 'it-quality.db'));
+
+          const MAX_AGE_DAYS = 180;
+          const OVERDUE_THRESHOLD = MAX_AGE_DAYS;
+          const today = new Date();
+
+          const rows = db.prepare('SELECT id, name, last_reviewed FROM frameworks ORDER BY id').all();
+          let hasOverdue = false;
+
+          console.log('Framework freshness report:');
+          console.log('='.repeat(60));
+
+          for (const row of rows) {
+            const lastReviewed = new Date(row.last_reviewed);
+            const ageDays = Math.floor((today - lastReviewed) / (1000 * 60 * 60 * 24));
+            const pct = Math.round((ageDays / OVERDUE_THRESHOLD) * 100);
+
+            let status;
+            if (ageDays > OVERDUE_THRESHOLD) {
+              status = 'OVERDUE';
+              hasOverdue = true;
+            } else if (pct >= 80) {
+              status = 'DUE';
+            } else {
+              status = 'Current';
+            }
+
+            console.log(\`[\${status}] \${row.id}: \${row.last_reviewed} (\${ageDays} days / \${pct}%)\`);
+          }
+
+          console.log('='.repeat(60));
+
+          if (hasOverdue) {
+            console.error('ERROR: One or more frameworks are OVERDUE for review (>180 days).');
+            process.exit(1);
+          } else {
+            console.log('All frameworks are within the 180-day review threshold.');
+          }
+          "
