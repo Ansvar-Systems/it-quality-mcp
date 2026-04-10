@@ -64,6 +64,7 @@ export async function getProcessDesign(
     return {
       content: [{ type: 'text', text: 'Error: item_id is required.' }],
       isError: true,
+      _error_type: 'validation_error',
       ...responseMeta(db),
     };
   }
@@ -74,6 +75,7 @@ export async function getProcessDesign(
     return {
       content: [{ type: 'text', text: `Error: Item "${input.item_id}" not found.` }],
       isError: true,
+      _error_type: 'not_found',
       ...responseMeta(db),
     };
   }
@@ -145,6 +147,11 @@ export async function getProcessDesign(
     source: {
       standard: row.source_standard || undefined,
       clause: row.source_clause || undefined,
+    },
+    _citation: {
+      canonical_ref: row.item_id,
+      display_text: `${row.title} (${row.framework_id})`,
+      lookup: { tool: 'get_practice', args: { item_id: row.item_id } },
     },
     ...responseMeta(db),
   };

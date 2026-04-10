@@ -146,5 +146,14 @@ export async function searchPractices(
     results = runLikeFallback(db, query.trim(), input.domain, input.framework, limit);
   }
 
-  return { results, ...responseMeta(db) };
+  const resultsWithCitation = results.map((r) => ({
+    ...r,
+    _citation: {
+      canonical_ref: r.item_id,
+      display_text: `${r.title} (${r.framework_id})`,
+      lookup: { tool: 'get_practice', args: { item_id: r.item_id } },
+    },
+  }));
+
+  return { results: resultsWithCitation, ...responseMeta(db) };
 }
