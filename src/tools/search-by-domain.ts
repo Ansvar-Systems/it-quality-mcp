@@ -46,5 +46,13 @@ export async function searchByDomain(
   params.push(limit);
 
   const rows = db.prepare(sql).all(...params) as DomainItemResult[];
-  return { results: rows, ...responseMeta(db) };
+  const rowsWithCitation = rows.map((r) => ({
+    ...r,
+    _citation: {
+      canonical_ref: r.item_id,
+      display_text: `${r.title} (${r.framework_id})`,
+      lookup: { tool: 'get_practice', args: { item_id: r.item_id } },
+    },
+  }));
+  return { results: rowsWithCitation, ...responseMeta(db) };
 }

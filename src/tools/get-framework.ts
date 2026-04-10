@@ -36,6 +36,7 @@ export async function getFramework(
     return {
       content: [{ type: 'text', text: 'Error: framework_id is required.' }],
       isError: true,
+      _error_type: 'validation_error',
       ...responseMeta(db),
     };
   }
@@ -47,12 +48,18 @@ export async function getFramework(
     return {
       content: [{ type: 'text', text: `Error: Framework "${fid}" not found.` }],
       isError: true,
+      _error_type: 'not_found',
       ...responseMeta(db),
     };
   }
 
   const result: Record<string, unknown> = {
     ...row,
+    _citation: {
+      canonical_ref: row.id,
+      display_text: `${row.name} ${row.version} (${row.authority})`,
+      lookup: { tool: 'get_framework', args: { framework_id: row.id } },
+    },
     ...responseMeta(db),
   };
 

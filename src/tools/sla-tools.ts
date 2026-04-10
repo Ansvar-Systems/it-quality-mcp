@@ -35,6 +35,11 @@ interface SlaMetricResult {
   measurement_guidance: string;
   related_itil_practice: string;
   tags: unknown;
+  _citation: {
+    canonical_ref: string;
+    display_text: string;
+    lookup: { tool: string; args: { query: string } };
+  };
 }
 
 const DEFAULT_LIMIT = 20;
@@ -63,6 +68,11 @@ function formatRow(row: SlaMetricRow): SlaMetricResult {
     measurement_guidance: row.measurement_guidance,
     related_itil_practice: row.related_itil_practice,
     tags: safeJsonParse(row.tags, []),
+    _citation: {
+      canonical_ref: row.metric_id,
+      display_text: `${row.name} (${row.category})`,
+      lookup: { tool: 'get_sla_templates', args: { query: row.metric_id } },
+    },
   };
 }
 
