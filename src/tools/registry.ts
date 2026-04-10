@@ -420,11 +420,12 @@ export function registerTools(
           };
       }
 
-      // If the result already has isError (from tool-level validation), return it directly
+      // If the result already has isError (from tool-level validation), serialize the full
+      // result object (including _meta and _error_type) so callers receive complete context.
       const resultObj = result as Record<string, unknown>;
       if (resultObj.isError) {
         return {
-          content: resultObj.content as Array<{ type: string; text: string }>,
+          content: [{ type: 'text', text: JSON.stringify(result, null, 2) }],
           isError: true,
         };
       }
